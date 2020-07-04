@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Дипломный проект</title>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+  <!-- Унификация стилей -->
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="styles/styles.css" />
+  <!-- Стили для формы обратного звонка -->
+  <link rel="stylesheet" href="styles/jquery.formstyler.css">
+  <!-- Подключаем icon-fonts -->
+  <link rel="stylesheet" href="styles/all.min.css" />
+</head>
+
+<body>
+  <!-- Хедер  -->
+  <header class="header fix-block">
+    <div class="container">
+      <div class="header__body">
+        <!-- Мобильное меню -->
+        <div class="header__burger-menu">
+          <span> </span>
+        </div>
+        <!-- Главное меню -->
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__list-item">
+              <a href="#" class="header__list-link">Услуги</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__list-link">Портфолио</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__list-link">Стоимость</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__list-contacts">
+          <li>
+            <a href="tel:+7(499)955-55-77">
+              <span class="header__phone"> +7 (499) 955-55-77</span>
+            </a>
+          </li>
+          <li><a href="#" class="header__call-btn popup-link">Заказать звонок</a></li>
+        </ul>
+        <!-- Кнопка заказа звонка для мобильных -->
+        <a href="#" class="header__mobile-call-btn popup-link">
+          <i class="fa fa-phone"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Основное -->
+  <main>
+    <!-- Первая секция -->
+    <section class="first-section">
+      <!-- Летающие теги -->
+      <span class="first-section__decorate-slash_small"></span>
+      <span class="first-section__decorate-slash"></span>
+      <span class="first-section__decorate-brackets"></span>
+      <span class="first-section__decorate-div"></span>
+      <span class="first-section__decorate-sharp"></span>
+      <div class="container">
+        <h1 class="first-heading">
+          Дмитрий Алексеев
+        </h1>
+        <p class="first-section__text">
+          Frontend-разработчик и веб-верстальщик
+        </p>
+        <a href="#" class="first-section__btn popup-link">Узнать больше</a>
+      </div>
+      <picture class="first-section__img">
+        <source srcset="img/man-mobile.png" media="(max-width: 767px)">
+        <source srcset="img/man-mobile.webp" media="(max-width: 767px)">
+        <source type="image/webp" srcset="img/man.webp">
+        <img src="img/man.png" alt="Дмитрий Алексеев">
+      </picture>
+    </section>
+    <!-- Вторая секция -->
+    <section class="second-section">
+      <div class="container">
+        <h2 class="second-heading">
+          Что я делаю
+        </h2>
+        <ul class="second-section__list">
+          <li class="second-list__item-layout">
+            <h3 class="second-section__list-heading">
+              Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности
+            </h3>
+          </li>
+          <li class="second-list__item-adaptive">
+            <h3 class="second-section__list-heading">
+              Адаптивная вёрстка под все браузеры и&nbsp;устройства
+            </h3>
+          </li>
+          <li class="second-list__item-programming">
+            <h3 class="second-section__list-heading">
+              Frontend–разработка и&nbsp;программирование
+            </h3>
+          </li>
+          <li class="second-list__item-coding">
+            <h3 class="second-section__list-heading">
+              Исправление и&nbsp;доработка существующей вёрстки
+            </h3>
+          </li>
+        </ul>
+        <a href="#" class="second-section__btn popup-link">Узнать стоимость</a>
+      </div>
+    </section>
+    <!-- Третья секция -->
+    <section class="third-section">
+      <div class="container">
+        <h2 class="second-heading">
+          Примеры моих работ
+        </h2>
+        <!-- Слайдер -->
+        <div class="third-section__slider">
+          <div class="slider-item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/snippet_1.webp">
+                <img data-lazy="img/snippet_1" src="img/snippet_1.jpg" alt="Сайт психолога Веры Антоновой">
+              </picture>
+            </a>
+            <p class="slider-text">Сайт психолога Веры Антоновой</p>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/snippet_2.webp">
+                <img data-lazy="img/snippet_2.jpg" src="img/snippet_2.jpg" alt="Сайт магазина детской одежды">
+              </picture>
+            </a>
+            <p class="slider-text">Сайт магазина детской одежды</p>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/snippet_3.webp">
+                <img data-lazy="img/snippet_3.jpg" src="img/snippet_3.jpg" alt="Сайт магазина «Рыболов»">
+              </picture>
+            </a>
+            <p class="slider-text">Сайт магазина «Рыболов»</p>
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/snippet_1.webp">
+                <img data-lazy="img/snippet_1.jpg" src="img/snippet_1.jpg" alt="Сайт психолога Веры Антоновой">
+              </picture>
+            </a>
+            <p class="slider-text">Сайт психолога Веры Антоновой</p>
+
+          </div>
+          <div class="slider-item">
+            <a href="#">
+              <picture>
+                <source type="image/webp" srcset="img/snippet_2.webp">
+                <img data-lazy="img/snippet_2" src="img/snippet_2.jpg" alt="Сайт магазина детской одежды">
+              </picture>
+            </a>
+            <p class="slider-text">Сайт магазина детской одежды</p>
+          </div>
+        </div>
+        <a href="#" class="third-section__btn popup-link">Заказать проект</a>
+      </div>
+    </section>
+    <!-- Четвертая секция -->
+    <section class="fourth-section">
+      <div class="container">
+        <div class="adaptive-layout">
+          <h2 class="fourth-section__heading">
+            Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000
+            рублей всего за&nbsp;4&nbsp;часа.*
+          </h2>
+          <p class="fourth-section__text">
+            * Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных
+            и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости
+            от&nbsp;сложности задач.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__body">
+        <!-- Меню в футере -->
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-list-item">
+              <a href="#">
+                <h3 class="footer__list-item-text">Услуги</h3>
+              </a>
+            </li>
+            <li class="footer__nav-list-item">
+              <a href="#">
+                <h3 class="footer__list-item-text">Портфолио</h3>
+              </a>
+            </li>
+            <li class="footer__nav-list-item">
+              <a href="#">
+                <h3 class="footer__list-item-text">Стоимость</h3>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__contacts-list">
+          <li class="footer__contacts-item">
+            <a href="tel:+7(499)955-55-77">
+              <span class="footer__contacts-item-icon" aria-hidden="true">
+                <i class="fa fa-phone"></i>
+              </span>
+              +7 (499)955-55-77
+            </a>
+          </li>
+          <li class="footer__contacts-item">
+            <a href="mailto:dmitry@alekseev.com">
+              <span class="footer__contacts-item-icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              dmitry@alekseev.com
+            </a>
+          </li>
+        </ul>
+        <div class="footer__sprites">
+          <a href="#popup" class="footer__call-btn popup-link">Заказать звонок</a>
+          <ul class="footer__sprites-list">
+            <li class="footer__sprites-list_item">
+              <a href="#" class="sprite sprite-facebook-logo-_1_"></a>
+            </li>
+            <li class="footer__sprites-list_item">
+              <a href="#" class="sprite sprite-instagram"></a>
+            </li>
+            <li class="footer__sprites-list_item">
+              <a href="#" class="sprite sprite-twitter-logo-silhouette"></a>
+            </li>
+            <li class="footer__sprites-list_item">
+              <a href="#" class="sprite sprite-vk-_1_"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__copyrights">
+      <span class="footer__copyrights-text">
+        &copy; Дмитрий Алексеев, 2017-2020
+      </span>
+    </div>
+  </footer>
+  <!-- Форма обратного звонка -->
+  <div class="popup fix-block">
+    <div class="popup-body">
+      <div class="popup-content">
+        <a href="#" class="popup-close">Закрыть</a>
+        <form class="form__callback" method="POST">
+          <input type="hidden" name="project_name" value="summersby.ru">
+          <input type="hidden" name="admin_email" value="pashkov_se@mail.ru">
+		      <input type="hidden" name="form_subject" value="Тема письма">
+          <h2 class="form__heading">Заказать обратный звонок</h2>
+          <label class="form__input">
+            <span>Ваше имя</span>
+            <input type="text" name="Имя">
+          </label>
+          <label class="form__input">
+            <span>Номер телефона</span>
+            <input type="tel" name="Телефон" placeholder="+7 (___) ___-__-__">
+          </label>
+          <label class="form__input">
+            <span>Адрес электронной почты</span>
+            <input type="email" name="Почта">
+          </label>
+          <input class="form__button" type="submit" value="Отправить">
+          <label class="form__check">
+            <input type="checkbox">
+            <span>Нажатием на кнопку я даю свое согласие на обработку персональных данных
+              в соответствии с указанными здесь условиями.</span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup-done">Спасибо за заявку! Скоро мы Вам перезвоним!</div>
+  <!-- Подключаем слайдер Slick -->
+  <script src="scripts/jquery-3.5.1.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <!-- Скрипты для формы обратного звонка -->
+  <script src="scripts/jquery.inputmask.min.js"></script>
+  <script src="scripts/jquery.formstyler.min.js"></script>
+  <script src="scripts/jquery.validate.min.js"></script>
+  <script src="scripts/formscript.js"></script>
+  <script src="scripts/popup.js"></script>
+</body>
+
+</html>
