@@ -44,12 +44,19 @@ $(document).ready(function(){
             console.log("успех");
             let vr = $('.popup');
             let br = $('.popup-done');
-            vr.hide();
-            
-            br.classList.add('open');
+            // vr.hide();
+            vr.removeClass('open');
+            br.addClass('active');
+            setTimeout(function(){
+                $('.active').fadeOut(500)
+            },3000);
+            body.classList.remove('lock');
             th.trigger('reset');
+            setTimeout(function(){
+            window.location.reload();
+            },3000);
         });
-
+        
         return false;
         }
     });

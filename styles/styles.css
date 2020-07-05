@@ -939,7 +939,7 @@ a {
   opacity: 1;
   visibility: visible;
 } */
-.popup-done.open {
+.active {
   opacity: 1;
   visibility: visible;
 }
