@@ -46,7 +46,7 @@ $(document).ready(function(){
             let br = $('.popup-done');
             vr.hide();
             
-            br.addClass('active');
+            br.classList.add('open');
             th.trigger('reset');
         });
 

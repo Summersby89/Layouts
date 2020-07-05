@@ -919,23 +919,49 @@ a {
 }
 /* Форма отправлена */
 .popup-done {
-  display: none;
-  
-}
-.active {
-  display: block;
+  position: fixed;
   display: flex;
-  position:fixed;
-  top:0;
-  left: 0;
-  width: 300px;
-  height: 300px;
-  background: #fff;
-  font-size: 25px;
   align-items: center;
   justify-content: center;
-  z-index: 3000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease 0s;
+  z-index: 6000;
 }
+/* .popup:target {
+  opacity: 1;
+  visibility: visible;
+} */
+.popup-done.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-done-body {
+  max-height: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  background: #fff;
+}
+/* .popup-done-content {
+  background-color: #fff;
+  max-width: 800px;
+  font-size: 25px;
+  color: #fff;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  position: relative;
+  transform: perspective(800px) translate(0px, -100%) rotate(270deg);
+} */
 /* Адаптив */
 
 @media (min-width: 1025px) and (max-width: 1400px) {
