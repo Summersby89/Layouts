@@ -37,13 +37,13 @@
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li class="header__list-item">
-              <a href="#" class="header__list-link">Услуги</a>
+              <a href="#second-section" class="header__list-link">Услуги</a>
             </li>
             <li class="header__list-item">
-              <a href="#" class="header__list-link">Портфолио</a>
+              <a href="#third-section" class="header__list-link">Портфолио</a>
             </li>
             <li class="header__list-item">
-              <a href="#" class="header__list-link">Стоимость</a>
+              <a href="#fourth-section" class="header__list-link">Стоимость</a>
             </li>
           </ul>
         </nav>
@@ -76,9 +76,9 @@
         <h1 class="first-heading">
           Дмитрий Алексеев
         </h1>
-        <p class="first-section__text">
+        <h2 class="first-section__text">
           Frontend-разработчик и веб-верстальщик
-        </p>
+        </h2>
         <a href="#" class="first-section__btn popup-link">Узнать больше</a>
       </div>
       <picture class="first-section__img">
@@ -89,7 +89,7 @@
       </picture>
     </section>
     <!-- Вторая секция -->
-    <section class="second-section">
+    <section class="second-section" id="second-section">
       <div class="container">
         <h2 class="second-heading">
           Что я делаю
@@ -120,11 +120,11 @@
       </div>
     </section>
     <!-- Третья секция -->
-    <section class="third-section">
+    <section class="third-section" id="third-section">
       <div class="container">
-        <h2 class="second-heading">
+        <h3 class="second-heading">
           Примеры моих работ
-        </h2>
+        </h3>
         <!-- Слайдер -->
         <div class="third-section__slider">
           <div class="slider-item">
@@ -178,18 +178,18 @@
       </div>
     </section>
     <!-- Четвертая секция -->
-    <section class="fourth-section">
+    <section class="fourth-section" id="fourth-section">
       <div class="container">
         <div class="adaptive-layout">
-          <h2 class="fourth-section__heading">
+          <h3 class="fourth-section__heading">
             Адаптивная вёрстка под все устройства и&nbsp;браузеры от&nbsp;1000
             рублей всего за&nbsp;4&nbsp;часа.*
-          </h2>
-          <p class="fourth-section__text">
+          </h3>
+          <small class="fourth-section__text">
             * Срок и&nbsp;стоимость могут отличаться от&nbsp;заявленных
             и&nbsp;рассчитываются индивидуально, в&nbsp;зависимости
             от&nbsp;сложности задач.
-          </p>
+          </small>
         </div>
       </div>
     </section>
@@ -202,17 +202,17 @@
         <nav class="footer__nav">
           <ul class="footer__nav-list">
             <li class="footer__nav-list-item">
-              <a href="#">
+              <a href="#second-section">
                 <h3 class="footer__list-item-text">Услуги</h3>
               </a>
             </li>
             <li class="footer__nav-list-item">
-              <a href="#">
+              <a href="#third-section">
                 <h3 class="footer__list-item-text">Портфолио</h3>
               </a>
             </li>
             <li class="footer__nav-list-item">
-              <a href="#">
+              <a href="#fourth-section">
                 <h3 class="footer__list-item-text">Стоимость</h3>
               </a>
             </li>
@@ -220,7 +220,7 @@
         </nav>
         <ul class="footer__contacts-list">
           <li class="footer__contacts-item">
-            <a href="tel:+7(499)955-55-77">
+            <a href="tel:+7(499)955-55-77" class="footer__contacts-link">
               <span class="footer__contacts-item-icon" aria-hidden="true">
                 <i class="fa fa-phone"></i>
               </span>
@@ -228,7 +228,7 @@
             </a>
           </li>
           <li class="footer__contacts-item">
-            <a href="mailto:dmitry@alekseev.com">
+            <a href="mailto:dmitry@alekseev.com" class="footer__contacts-link">
               <span class="footer__contacts-item-icon">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -256,9 +256,9 @@
       </div>
     </div>
     <div class="footer__copyrights">
-      <span class="footer__copyrights-text">
+      <small class="footer__copyrights-text">
         &copy; Дмитрий Алексеев, 2017-2020
-      </span>
+      </small>
     </div>
   </footer>
   <!-- Форма обратного звонка -->
@@ -268,8 +268,8 @@
         <a href="#" class="popup-close">Закрыть</a>
         <form class="form__callback" method="POST">
           <input type="hidden" name="project_name" value="summersby.ru">
-          <input type="hidden" name="admin_email" value="summersby89@gmail.com">
-		      <input type="hidden" name="form_subject" value="Заявка на звонок">
+          <input type="hidden" name="admin_email" value="pashkov_se@mail.ru">
+		      <input type="hidden" name="form_subject" value="Тема письма">
           <h2 class="form__heading">Заказать обратный звонок</h2>
           <label class="form__input">
             <span>Ваше имя</span>
@@ -283,9 +283,9 @@
             <span>Адрес электронной почты</span>
             <input type="email" name="Почта">
           </label>
-          <input class="form__button" type="submit" value="Отправить">
+          <input class="form__button" type="submit" disabled="disabled" id="submit" value="Отправить">
           <label class="form__check">
-            <input type="checkbox">
+            <input type="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;">
             <span>Нажатием на кнопку я даю свое согласие на обработку персональных данных
               в соответствии с указанными здесь условиями.</span>
           </label>
