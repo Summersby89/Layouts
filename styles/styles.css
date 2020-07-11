@@ -1486,6 +1486,14 @@ a {
     font-size: 28px;
     line-height: 40px;
   }
+  
+  .fourth-section__decorate-div_white,
+  .fourth-section__decorate-slash_white,
+  .fourth-section__decorate-brackets_white,
+  .fourth-section__decorate-sharp_white,
+  .fourth-section__brackets-white_left {
+    display: none;
+  }
 
   .fourth-section__text {
     font-size: 14px;
