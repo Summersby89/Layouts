@@ -1,9 +1,14 @@
 $(document).ready(function() {
   $('.header__burger-menu').click(function() {
     $('.header__burger-menu, .header__menu').toggleClass('active');
-    $('body').toggleClass('lock');    
+    $('body').toggleClass('lock');
+
   });  
-    
+    $(document).on('click', '.header__list-link', function() {
+    $('.header__burger-menu, .header__menu').removeClass('active');
+    $('body').removeClass('lock');
+    }); 
+
     $('.third-section__slider').slick({
         arrows: true,
         adaptiveHeihgt: true,
