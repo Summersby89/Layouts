@@ -427,6 +427,16 @@ a {
   align-items: flex-start;
 }
 
+.slick-slide {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+}
+
 .slick-arrow {
   position: absolute;
   top: 45%;
@@ -475,7 +485,15 @@ a {
   text-align: center;
   border: 1px solid #ff4e2e;
   cursor: pointer;
+}
 
+.first-section__btn:hover,
+.second-section__btn:hover,
+.third-section__btn:hover {
+  background: #fff;
+  color: #ff4e2e ;
+  box-shadow: inset 0 0 0 1px #ff4e2e;
+  transition: 0.3s ease-in;
 }
 
 /* Четвертая секция */
@@ -627,7 +645,7 @@ a {
 }
 
 .footer__contacts-link:hover {
-  font-size: 30px;
+  color: #ff2f96;
   transition: 0.3s ease-in;
 }
 
@@ -747,6 +765,7 @@ a {
   border: 1px solid #f82370;
   background-color: #fff;
   color: #fc557c;
+  
 }
 
 .footer__call-btn:hover {
@@ -779,8 +798,12 @@ a {
   background-position: -5px -5px;
 }
 
-.sprite-facebook-logo-_1_:hover {
+.sprite-facebook-logo-_1_:hover,
+.sprite-instagram:hover,
+.sprite-twitter-logo-silhouette:hover,
+.sprite-vk-_1_:hover {
   opacity: 1;
+  scale: 1.2;
 }
 
 .sprite-instagram {
@@ -789,28 +812,16 @@ a {
   background-position: -31px -5px;
 }
 
-.sprite-instagram:hover {
-  opacity: 1;
-}
-
 .sprite-twitter-logo-silhouette {
   width: 29px;
   height: 25px;
   background-position: -66px -5px;
 }
 
-.sprite-twitter-logo-silhouette:hover {
-  opacity: 1;
-}
-
 .sprite-vk-_1_ {
   width: 35px;
   height: 21px;
   background-position: -105px -5px;
-}
-
-.sprite-vk-_1_:hover {
-  opacity: 1;
 }
 
 /* Форма обратного звонка */
@@ -848,10 +859,11 @@ a {
 
 .popup-content {
   background-color: #fff;
-  max-width: 800px;
+  max-width: 600px;
   transition: all 0.8s ease 0s;
   opacity: 0;
   position: relative;
+  border-radius: 5px;
   transform: perspective(800px) translate(0px, -100%) rotate(270deg);
 }
 
@@ -874,8 +886,8 @@ a {
 .form__callback {
   position: relative;
   background-color: #fbfbfb;
-  padding: 60px 60px;
-  padding-bottom: 60px;
+  padding: 40px;
+  border-radius: 5px;
 }
 
 .form__heading {
@@ -887,17 +899,17 @@ a {
   font-weight: bold;
   line-height: 60px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .form__input input {
-  width: 307px;
-  height: 51px;
+  width: 270px;
+  height: 50px;
   border: 1px solid #ff8f5a;
   color: #ff4e2e;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .form__input {
@@ -1037,9 +1049,9 @@ a {
 
 /* Адаптив */
 
-@media (min-width: 1025px) and (max-width: 1400px) {
+@media (min-width: 1025px) and (max-width: 1600px) {
   .first-section {
-    background-position: 730px 50px;
+    background-position: 790px 50px;
   }
 
   .first-heading {
@@ -1050,19 +1062,7 @@ a {
   .first-section__img {
     right: 20px;
   }
-  /* .fourth-section__decorate-slash_white::before {
-    left: 1057px;
-  }
-  .fourth-section__decorate-brackets_white {
-    display: none;
-  }
-  .fourth-section__decorate-div_white::before {
-    top: 2706px;
-    left: 888px;
-  }
-  .fourth-section__decorate-sharp_white::before {
-    top: 2717px;
-  } */
+  
 }
 
 @media (max-width: 1024px) {
