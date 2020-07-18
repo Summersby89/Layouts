@@ -81,6 +81,7 @@ a {
   left: 0;
   right: 0;
   z-index: 100;
+  transition: all .3s ease;
 }
 
 .header__body {
@@ -100,7 +101,10 @@ a {
   width: 100%;
   height: 100%;
   background-color: #fbfbfb;
-  ;
+}
+
+.header.out {
+	opacity: 0;
 }
 
 /* Главное меню */
@@ -1054,10 +1058,10 @@ a {
     background-position: 790px 50px;
   }
 
-  .first-heading {
+  /* .first-heading {
     font-size: 54px;
     line-height: 105px;
-  }
+  } */
 
   .first-section__img {
     right: 20px;
