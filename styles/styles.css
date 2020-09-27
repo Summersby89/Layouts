@@ -200,9 +200,9 @@
  }
 
  .first-section__btn {
-  width: 270px;
-  line-height: 54px;
-  font-size: 18px;
+   width: 270px;
+   line-height: 54px;
+   font-size: 18px;
    color: #fff;
    border-radius: 5px;
    padding: 10px 25px;
@@ -214,7 +214,7 @@
    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
      7px 7px 20px 0px rgba(0, 0, 0, .1),
      4px 4px 5px 0px rgba(0, 0, 0, .1);
-  
+
    text-align: center;
    border: none;
    background: #ff4e2e;
@@ -405,7 +405,7 @@
    border: 1px solid #ff4e2e;
    cursor: pointer;
  }
- 
+
  .second-heading {
    margin: 0;
    padding-top: 100px;
@@ -564,7 +564,7 @@
  /* Четвертая секция */
  .fourth-section {
    position: relative;
-   background: linear-gradient(77deg, #ff8f5a, #ff2f96);
+   background: linear-gradient(77deg, #12c2e9, #c471ed, #f64f59);
  }
 
  .fourth-section__heading {
@@ -840,54 +840,59 @@
  }
 
  /* Спрайты */
- .sprite {
-   display: flex;
-   background-image: url("../img/spritesheet.jpg");
-   background-repeat: no-repeat;
-   opacity: 0.7;
- }
-
- .footer__sprites-list {
+ .social-box {
    margin: 0;
    display: flex;
    align-items: center;
+
  }
 
- .footer__sprites-list_item:not(:last-child) {
-   margin-right: 30px;
+ .social-box .social-icn {
+   width: 54px;
+   height: 54px;
+   border-radius: 27px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: transform 1s;
+   cursor: pointer;
+   background: linear-gradient(to bottom, var(--accent-color), var(--gradient-color));
  }
 
- .sprite-facebook-logo-_1_ {
-   width: 16px;
-   height: 28px;
-   background-position: -5px -5px;
+ .social-box .social-icn i {
+   font-size: 20px;
+   color: #fff;
  }
 
- .sprite-facebook-logo-_1_:hover,
- .sprite-instagram:hover,
- .sprite-twitter-logo-silhouette:hover,
- .sprite-vk-_1_:hover {
-   opacity: 1;
-   scale: 1.2;
+ .social-box .social-icn:hover {
+   transform: rotate(360deg)
  }
 
- .sprite-instagram {
-   width: 25px;
-   height: 25px;
-   background-position: -31px -5px;
+ .social-box .social-icn:nth-child(1) {
+   --accent-color: #4267B2;
+   --gradient-color: #4267B2;
  }
 
- .sprite-twitter-logo-silhouette {
-   width: 29px;
-   height: 25px;
-   background-position: -66px -5px;
+ .social-box .social-icn:nth-child(2) {
+   --accent-color: #e1306c;
+   --gradient-color: #833ab4;
  }
 
- .sprite-vk-_1_ {
-   width: 35px;
-   height: 21px;
-   background-position: -105px -5px;
+ .social-box .social-icn:nth-child(3) {
+   --accent-color: #1da1f2;
+   --gradient-color: #1fd1f9;
  }
+
+ .social-box .social-icn:nth-child(4) {
+   --accent-color: #0e76a8;
+   --gradient-color: #00acee;
+ }
+
+ .social-box .social-icn:not(:last-child) {
+   margin-right: 15px;
+ }
+
+
 
  /* Форма обратного звонка */
  .popup {
