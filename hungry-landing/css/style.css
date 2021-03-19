@@ -1,0 +1,609 @@
+@font-face {
+    font-family: 'bannybold_round';
+    src: url('/fonts/banny-boldround-webfont.woff2') format('woff2'),
+        url('/fonts/banny-boldround-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'bannylight_round';
+    src: url('/fonts/banny-lightround-webfont.woff2') format('woff2'),
+        url('/fonts/banny-lightround-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+
+
+}
+
+@font-face {
+    font-family: 'bannyround';
+    src: url('/fonts/banny-round-webfont.woff2') format('woff2'),
+        url('/fonts/banny-round-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('/fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('/fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('/fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('/fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+body {}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 18px;
+    max-width: 1244px;
+    position: relative;
+}
+
+.header {
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    margin-top: 25px;
+    left: calc(50% - 75px);
+    background-image: url(/img/Vector.svg);
+    background-size: 100%;
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/hero_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .hero::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    
+} */
+
+.hero__heading {
+    position: relative;
+    font-family: 'bannybold_round';
+    font-size: 96px;
+    line-height: 139px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero__subtitle {
+    font-family: 'Open Sans Bold';
+    font-size: 12px;
+    color: #FFF;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+.header__nav {
+    padding: 41px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list__item {
+    width: 133px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.nav__list_left {
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav__list_right {
+    display: flex;
+    justify-content: center;
+}
+
+.hero__content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-box {
+    position: absolute;
+    top: calc(50vh - 100px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__btns {
+    margin-top: 30px;
+    margin-bottom: 82px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-colored {
+
+    margin-right: 40px;
+    width: 200px;
+    padding: 18px 0;
+    font-family: "Open Sans Regular";
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 22px;
+    /* or 167% */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    background: #E8C300;
+}
+
+.btn-notcolored {
+    width: 200px;
+    padding: 18px 0;
+    font-family: "Open Sans Regular";
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 22px;
+    /* or 167% */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid;
+    cursor: pointer;
+    background: transparent
+}
+
+.hero__btn:active {}
+
+.hero__dwn-btn {
+    position: absolute;
+    bottom: 12vh;
+    /*мешает*/
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    animation-name: bounce;
+    -webkit-animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    visibility: visible !important;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.about-us {}
+
+.subheading {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: 'bannybold_round';
+    font-size: 36px;
+    line-height: 48px;
+    /* or 133% */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading-line::after {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 5px;
+    background: #E8C300;
+    border-radius: 50px;
+    right: 0;
+    display: block;
+}
+
+.sub-subheading {
+    margin-bottom: 25px;
+    font-family: 'Open Sans Bold';
+    /* font-weight: bold; */
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.subheading_white {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    font-family: 'bannybold_round';
+    font-size: 36px;
+    line-height: 48px;
+    /* or 133% */
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.sub-subheading_white {
+    margin-bottom: 25px;
+    font-family: 'Open Sans Bold';
+    /* font-weight: bold; */
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Open Sans Regular';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    text-align: center;
+}
+
+.text_white {
+    font-family: 'Open Sans Regular';
+    /* font-weight: normal; */
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    text-align: center;
+    color: #fff;
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.content-box_reverse {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 50px 0 100px 0;
+}
+
+.about-us__text-box {
+    padding: 105px 0;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 48.24%;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-table__text-box {
+    padding: 56.5px 0;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 48.24%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__img-box {
+    flex: 0 0 48.23%;
+    position: relative;
+}
+
+.content__img-box_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 0 0 48.23%;
+    position: relative;
+}
+
+.image-about-us {
+    width: 475px;
+    height: 100%;
+    background: url(/img/about-img.png);
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-master-chef {
+    width: 475px;
+    height: 100%;
+    background: url(/img/chef.jpg);
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-book-table {
+    width: 475px;
+    height: 100%;
+    background: url(/img/vintage-clock.jpg);
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.square-right::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 125px);
+    /* left: calc(100% - 125px); */
+    right: 0;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.square-left::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 125px);
+    /* left: calc(100% - 125px); */
+    left: 0;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.master-chef {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/section-chef.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__subtitle-master-chef {
+
+    padding-top: 50px;
+    display: block;
+    font-family: 'Open Sans Bold';
+    font-size: 12px;
+    /* font-weight: bold; */
+    color: #FFF;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    flex: 0 1 94%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.book-table__input {
+    flex: 0 0 48.4%;
+    margin-bottom: 10px;
+    height: 60px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-colored_width {
+    width: 100%;
+    padding: 18px 0;
+    font-family: "Open Sans Regular";
+    /* font-weight: bold; */
+    font-size: 12px;
+    line-height: 22px;
+    /* or 167% */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    background: #E8C300;
+}
+
+/* .book-table__input:nth-child(odd) {
+    margin-right: 10px;
+} */
+
+.image-pancakes {
+    width: 475px;
+    height: 100%;
+    background: url(/img/pancakes.png);
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.specialties {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/specialites.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.delicious__text-box {
+    margin: 0 auto;
+    padding: 100px 0 50px;
+    /* display: flex;
+    flex-direction: column;
+    flex: 0 0 48.24%; */
+    max-width: 565px;
+    justify-content: center;
+
+}
+
+.selector-food__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.selector-food__list {
+    display: flex;
+}
+
+.selector-food__item {
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.selector-food__btn {
+    margin: 0;
+    padding: 16px 0;
+    width: 120px;
+    font-family: "Open Sans Bold";
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+    background: transparent;
+    cursor: pointer;
+    border: none
+}
+
+.selector-food__item:last-child {
+    border-right: none;
+}
+
+.food__wrapper {}
+
+.food__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.food__item {
+    /* width: 33.333%; */
+    height: 68px;
+}
+
+.food__name {
+    font-family: 'bannybold_round';
+    font-size: 18px;
+    line-height: 18px;
+    /* or 100% */
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.food__props {}
+
