@@ -1,0 +1,504 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #242B33;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.woff") format("woff"),
+    url("/fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Bold";
+  src: url("/fonts/PlayfairDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("/fonts/Raleway-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("/fonts/Raleway-Bold.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* главная секция */
+
+.header-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu {
+  padding: 55px 0;
+}
+
+.header-menu-list {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.first-screen {
+  display: flex;
+  justify-content: center;
+}
+
+.first-screen,
+.header {
+  background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), url(/img/view-window.jpg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.first-screen__center {
+  text-align: center;
+  width: 582px;
+  padding: 225px 0 74px 0;
+}
+
+.first-screen__mouse {
+  content: url(/img/mouse.png);
+  padding-bottom: 200px;
+
+}
+
+.main-heading {
+  padding-bottom: 100px;
+  font-family: "PlayfairDisplay-Bold";
+  font-size: 48px;
+  line-height: 64px;
+  color: #D4C17F;
+}
+
+.secondary-heading {
+  padding-bottom: 100px;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+
+  /* accent */
+  color: #D4C17F;
+}
+
+.menu-link {
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-contacts_text-place {
+  position: relative;
+  font-family: "Raleway-Regular";
+  font-size: 18px;
+  color: #fff;
+}
+
+.main-contacts_text-place::before {
+  position: absolute;
+  left: -30px;
+  content: url(/img/place.png);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.main-contacts_text-tel {
+
+  position: relative;
+  font-family: "Raleway-Regular";
+  font-size: 18px;
+  color: #fff;
+}
+
+.main-contacts_text-tel::before {
+  position: absolute;
+  left: -30px;
+  content: url(/img/Group.png);
+}
+
+/* секция наши квартиры */
+
+.our-apartment {
+
+  z-index: 1;
+}
+
+.our-apartment__list {
+  margin: 0;
+  padding: 120px 140px;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+
+}
+
+.apartment__item-bench {
+  background-image: url(/img/bench.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 126px;
+  margin-right: 70px;
+}
+
+.apartment__item-building {
+  background-image: url(/img/building.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 126px;
+  margin-right: 70px;
+}
+
+.apartment__item-fountain {
+  background-image: url(/img/fountain.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 126px;
+  margin-right: 70px;
+}
+
+.apartment__item-bike {
+  background-image: url(/img/Bike.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 126px;
+}
+
+.apartment__list-heading {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  /* or 135% */
+  text-align: center;
+  color: #fff;
+}
+
+.apartment__lofts-list {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.apartment__lofts-item {
+  margin-right: 0px;
+  width: 535px;
+}
+
+.apartment__lofts-item:nth-child(2n+1) {
+  margin-right: 30px;
+}
+
+.apartment__lofts-item:nth-child(-2n+1) {
+  margin-bottom: 30px;
+}
+
+/* секция хотите посмотреть? */
+
+.want-see {
+  padding-top: 180px;
+}
+
+.want-see_wrapper {
+  background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)), url(/img/city.jpg), #C4C4C4;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.want-see__text {
+  flex: 0 0 48.64%;
+  font-family: "Raleway-Regular";
+  align-self: end;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+  color: #fff;
+}
+
+.want-see .secondary-heading {
+  padding-bottom: 50px;
+}
+
+.wrapper-text {
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.want-see__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-wrapper {
+  flex: 0 0 49.1%;
+}
+
+.form-text {
+  display: inline-block;
+  font-family: "Raleway-Regular";
+  font-size: 13px;
+  line-height: 16px;
+  /* or 123% */
+  text-align: center;
+  color: #E7E7E7;
+}
+
+.form-input {
+  padding: 11px 0;
+  margin-bottom: 35px;
+  flex: 0 0 46.365%;
+  font-family: "Raleway-Regular";
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  /* identical to box height, or 193% */
+  color: #BEBEBE;
+  background: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+}
+
+.text-wrapper {
+  flex: 0 0 46.365%;
+  align-self: center;
+}
+
+.form-button {
+  padding: 12px;
+  flex: 0 0 46.365%;
+  background: #D4C17F;
+  font-family: "Raleway-Bold";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 169% */
+  text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.maps {
+  margin-top: 180px;
+}
+
+.float-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 37.5vw;
+  height: 80vh;
+  background: linear-gradient(0deg, rgba(36, 43, 51, 0.8), rgba(36, 43, 51, 0.8)), url(/img/float-in.jpg), #626262;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lofts__img {
+  width: 100%;
+  height: 100%;
+}
+  
+.lofts__card {
+  position: relative;
+  background: linear-gradient(180deg, #242B33 0%, rgba(36, 43, 51, 0) 0.01%, #242B33 100%), #D4C17F;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+
+.lofts__text {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+  right: 0;
+  font-family: "Raleway-Regular";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+
+.play-button {
+  width: 100px;
+  height: 100px;
+  background-image: url(/img/play_button.svg);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.bottom-heading {
+  margin-top: 180px;
+}
+
+.maps__form {
+  display: flex;
+  padding-bottom: 180px;
+}
+
+.map-el {
+  flex: 0 0 22.95%;
+  margin-right: 30px;
+}
+
+.maps-bottom {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  background: #D4C17F;
+  font-family: "Raleway-Bold";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background: #2D343C;
+}
+
+.footer-body {
+  padding-top: 72px;
+  padding-bottom: 60px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials__icon {
+  font-size: 20px;
+  color: #fff;
+}
+
+.socials__icon:not(:last-child) {
+  margin-right: 22px;
+}
+
+.from-footer:not(:last-child) {
+  margin-bottom: 15px;
+}
