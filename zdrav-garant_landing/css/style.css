@@ -1,0 +1,302 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-Regular.woff2") format("woff2"),
+        url("/fonts/Roboto-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("/fonts/Roboto-Bold.woff2") format("woff2"),
+        url("/fonts/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Black";
+    src: url("/fonts/Roboto-Black.woff2") format("woff2"),
+        url("/fonts/Roboto-Black.woff") format("woff");
+    font-weight: 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1440px;
+}
+
+.header {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* z-index: 100; */
+    transition: all .3s ease;
+}
+
+.header__logo {
+    width: 220px;
+}
+
+.header__nav {
+    flex: 0 1 40%;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-menu__item {
+    
+    font-family: "Roboto";
+
+}
+
+.menu__link {
+    position: relative;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.menu__link:hover {
+    color: #f82370;
+}
+
+.menu__link:before {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: #f82370;
+    transition: all 0.3s;
+}
+
+.menu__link:hover::before {
+    width: 100%;
+    left: 0;
+    background: #f82370;
+}
+
+.header__body {
+    position: relative;
+    /* z-index: 2; */
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    align-items: center;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fbfbfb;
+}
+
+.header__list-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.header__phone {
+    font-family: "Roboto Bold";
+    font-size: 25px;
+    font-weight: bold;
+    align-self: center;
+    line-height: 54px;
+    color: #000;
+}
+
+.header__call-btn {
+    margin-left: 30px;
+    font-family: "Roboto";
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #f82370;
+    background-color: #fff;
+    color: #f82370;
+    cursor: pointer;
+}
+
+.header__call-btn:hover {
+    background-color: #f82370;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+
+/* СЕКЦИЯ "НАШИ УСЛУГИ" */
+
+.hero {
+    margin-top: 110px;
+}
+
+.heading__box {
+    width: 50vw;
+}
+
+.hero__heading {
+    font-family: "Roboto Bold";
+    font-size: 46px;
+}
+
+.hero__subheading {
+    font-family: "Roboto";
+}
+
+.heading-text_red {
+    color: #f30b32;
+}
+
+.hero__btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "Roboto";
+    color: #f30b32;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.btn__item {
+    position: absolute;
+    display: block;
+}
+
+.btn__item:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f30b32);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.btn__item:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f30b32);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.btn__item:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f30b32);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.btn__item:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f30b32);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* СЕКЦИЯ "Расчет стоимости" */
+
+.cost-calculation {
+    background: url(/img/section-calc_back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
