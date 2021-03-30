@@ -12,284 +12,334 @@
 </head>
 
 <body>
-    <section class="hero">
-        <header class="header">
+    <main>
+        <section class="hero vertical-line">
+            <header class="header">
+                <div class="container">
+                    <!-- <div class="header__body"> -->
+                    <nav class="header__nav">
+                        <ul class="nav__list_left">
+                            <li class="list__item">Home</li>
+                            <li class="list__item">About</li>
+                            <li class="list__item">Team</li>
+                            <li class="list__item">Booking</li>
+                        </ul>
+                        <ul class="nav__list_right">
+                            <li class="list__item">Menu</li>
+                            <li class="list__item">Galerie</li>
+                            <li class="list__item">Events</li>
+                            <li class="list__item">Contacts</li>
+                        </ul>
+                    </nav>
+                    <div class="logo">
+                        <img src="/img/Vector.svg" alt="logo" srcset="">
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </header>
             <div class="container">
-                <!-- <div class="header__body"> -->
-                <nav class="header__nav">
-                    <ul class="nav__list_left">
-                        <li class="list__item">Home</li>
-                        <li class="list__item">About</li>
-                        <li class="list__item">Team</li>
-                        <li class="list__item">Booking</li>
-                    </ul>
-                    <ul class="nav__list_right">
-                        <li class="list__item">Menu</li>
-                        <li class="list__item">Galerie</li>
-                        <li class="list__item">Events</li>
-                        <li class="list__item">Contacts</li>
-                    </ul>
-                </nav>
-                <div class="logo">
-
-                </div>
-                <!-- </div> -->
-            </div>
-        </header>
-        <div class="hero__content-wrapper">
-            <div class="heading-box">
-                <small class="hero__subtitle">Restaurant</small>
-                <h1 class="hero__heading heading-line">Hungry people</h1>
-                <div class="hero__btns">
-                    <button class="btn-colored">book table</button>
-                    <button class="btn-notcolored">explore</button>
-                </div>
-            </div>
-            <button class="hero__dwn-btn" onclick="window.location.href = '#about-us';">
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </button>
-        </div>
-    </section>
-
-    <section class="about-us" id="about-us">
-        <div class="container">
-            <div class="content-box">
-                <div class="about-us__text-box">
-                    <h2 class="subheading heading-line">About us</h2>
-                    <h3 class="sub-subheading">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
-                        tempor magna.
-                    </h3>
-                    <p class="text">
-                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
-                        ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem
-                        quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
-                    </p>
-                </div>
-                <div class="content__img-box square-right">
-                    <div class="image-about-us"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="master-chef ">
-        <div class="container">
-            <small class="hero__subtitle-master-chef">our team</small>
-            <div class="content-box_reverse">
-                <div class="about-us__text-box">
-                    <h2 class="subheading_white heading-line">Master-chef</h2>
-                    <h3 class="sub-subheading_white">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
-                        tempor magna.
-                    </h3>
-                    <p class="text_white">
-                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
-                        ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem
-                        quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
-                    </p>
-                </div>
-                <div class="content__img-box_reverse square-left">
-                    <div class="image-master-chef"></div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="book-table">
-        <div class="container">
-            <div class="content-box">
-                <div class="book-table__text-box">
-                    <h2 class="subheading heading-line">Book a table</h2>
-                    <div class="form-wrapper">
-                        <form class="form" action="" method="post">
-                            <input class="book-table__input" type="text" name="" id="">
-                            <input class="book-table__input" type="text" name="" id="">
-                            <input class="book-table__input" type="date" name="" id="">
-                            <input class="book-table__input" type="tel" name="" id="">
-                            <input class="book-table__input" type="number" name="" id="">
-                            <input class="book-table__input" type="email" name="" id="">
-                            <button class="btn-colored_width">book now</button>
-                        </form>
+                <div class="heading-box">
+                    <small class="section__subtitle">Restaurant</small>
+                    <h1 class="hero__heading heading-line">Hungry people</h1>
+                    <div class="hero__btns">
+                        <button class="btn-colored">book table</button>
+                        <button class="btn-notcolored">explore</button>
                     </div>
                 </div>
-                <div class="content__img-box square-right">
-                    <div class="image-book-table"></div>
+            </div>
+            <div class="circle-btn">
+                <button class="hero__dwn-btn" onclick="window.location.href = '#about-us';">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="about-us" id="about-us">
+            <div class="container">
+                <div class="content-box">
+                    <div class="about-us__text-box">
+                        <h2 class="subheading heading-line">About us</h2>
+                        <h3 class="sub-subheading">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
+                            a,
+                            tempor magna.
+                        </h3>
+                        <p class="text">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                            ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                            lorem
+                            quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper
+                            laoreet.
+                        </p>
+                    </div>
+                    <div class="content__img-box square-right">
+                        <div class="context-img context-img_about-us"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="specialties">
-        <div class="container">
-            <small class="hero__subtitle-master-chef"> specialties</small>
-            <div class="content-box_reverse">
-                <div class="about-us__text-box">
-                    <h2 class="subheading_white heading-line">chocolate pancakes</h2>
-                    <h3 class="sub-subheading_white">
+        </section>
+        <section class="our-team vertical-line">
+            <div class="container">
+                <small class="section__subtitle section__subtitle_margin">our team</small>
+                <div class="content-box_reverse">
+                    <div class="about-us__text-box">
+                        <h2 class="subheading_white heading-line">Master-chef</h2>
+                        <h3 class="sub-subheading_white">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
+                            a,
+                            tempor magna.
+                        </h3>
+                        <p class="text_white">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                            ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                            lorem
+                            quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper
+                            laoreet.
+                        </p>
+                    </div>
+                    <div class="content__img-box_reverse square-left">
+                        <div class="context-img context-img_our-team"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="book-table">
+            <div class="container">
+                <div class="content-box">
+                    <div class="book-table__text-box">
+                        <h2 class="subheading heading-line">Book a table</h2>
+                        <div class="form-wrapper">
+                            <form class="form" action="" method="post">
+                                <input class="book-table__input" type="text" name="" id="">
+                                <input class="book-table__input" type="text" name="" id="">
+                                <input class="book-table__input" type="date" name="" id="">
+                                <input class="book-table__input" type="tel" name="" id="">
+                                <input class="book-table__input" type="text" name="" id="">
+                                <input class="book-table__input" type="email" name="" id="">
+                                <button class="btn-colored_width">book now</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="content__img-box square-right">
+                        <div class="context-img context-img_book-table"></div>
+                    </div>
+                </div>
+                <small class="section-contacts">
+                    <span class="book-table__props">
+                        Mon - Fri:<span class="book-table__props_bold">8PM - 10PM</span>, Sat - Sun: <span
+                            class="book-table__props_bold">8PM - 3AM</span>,
+                        Phohe:
+                    </span>
+                    <a href="tel:+40 729 131 637" class="book-table__link-tel">+40 729 131 637/</a>
+                    <a href="tel:+40 726 458 782" class="book-table__link-tel">+40 726 458 782</a>
+                </small>
+            </div>
+        </section>
+        <section class="specialties vertical-line">
+            <div class="container">
+                <small class="section__subtitle section__subtitle_margin"> specialties</small>
+                <div class="content-box_reverse">
+                    <div class="about-us__text-box">
+                        <h2 class="subheading_white heading-line">chocolate pancakes</h2>
+                        <h3 class="sub-subheading_white">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
+                            a,
+                            tempor magna.
+                        </h3>
+                        <p class="text_white">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                            ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                            lorem
+                            quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper
+                            laoreet.
+                        </p>
+                    </div>
+                    <div class="content__img-box_reverse square-left">
+                        <div class="context-img context-img_pancakes"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="delicious-menu">
+            <div class="container">
+                <div class="delicious__text-box">
+                    <h2 class="subheading heading-line">delicious menu</h2>
+                    <h3 class="sub-subheading">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
-                        tempor magna.
+                        tempor
+                        magna.
                     </h3>
-                    <p class="text_white">
-                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
-                        ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem
-                        quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
-                    </p>
                 </div>
-                <div class="content__img-box_reverse square-left">
-                    <div class="image-pancakes"></div>
+                <div class="selector-food__wrapper">
+                    <ul class="selector-food__list">
+                        <li class="selector-food__item">
+                            <button class="selector-food__btn">soupe</button>
+                        </li>
+                        <li class="selector-food__item">
+                            <button class="selector-food__btn">pizza</button>
+                        </li>
+                        <li class="selector-food__item">
+                            <button class="selector-food__btn">pasta</button>
+                        </li>
+                        <li class="selector-food__item">
+                            <button class="selector-food__btn">desert</button>
+                        </li>
+                        <li class="selector-food__item">
+                            <button class="selector-food__btn">wine</button>
+                        </li>
+                        <li class="selector-food__item">
+                            <button class="selector-food__btn">beer</button>
+                        </li>
+                        <li class="selector-food__item">
+                            <button class="selector-food__btn">drinks</button>
+                        </li>
+                    </ul>
                 </div>
 
+                <div class="food__wrapper">
+                    <ul class="food__list">
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                        <li class="food__item">
+                            <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
+                            </p>
+                            <small class="food__props">integer ullamcorper neque eu purus euismod</small>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+        <section class="private-events vertical-line">
+            <div class="container">
+                <small class="section__subtitle section__subtitle_margin">private events</small>
+                <div class="content-box">
+                    <div class=" content__img-box square-left">
+                        <div class="image-rings"> </div>
+                        <h3 class="vertical-subtitle_left">
+                            wedding
+                        </h3>
+                    </div>
+                    <div class="content__img-box square-right">
+                        <div class="image-hands"> </div>
+                        <h3 class="vertical-subtitle_right">
+                            corporate pzrties
+                        </h3>
+                    </div>
+                </div>
+                <small class="section-contacts">
+                    <span class="private-events__props">
+                        For private events please call:
+                    </span>
+                    <a href="tel:+40 729 131 637" class="link-tel">+40 729 131 637</a>
+                    <a href="tel:+40 726 458 782" class="link-tel">+40 726 458 782</a> <span
+                        class="private-events__props">
+                        or use the contact form.</span>
+                </small>
             </div>
-        </div>
-    </section>
-    <section class="delicious-menu">
-        <div class="container">
-            <div class="delicious__text-box">
-                <h2 class="subheading heading-line">delicious menu</h2>
-                <h3 class="sub-subheading">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
-                    tempor
-                    magna.
-                </h3>
-            </div>
-            <div class="selector-food__wrapper">
-                <ul class="selector-food__list">
-                    <li class="selector-food__item">
-                        <button class="selector-food__btn">soupe</button>
-                    </li>
-                    <li class="selector-food__item">
-                        <button class="selector-food__btn">pizza</button>
-                    </li>
-                    <li class="selector-food__item">
-                        <button class="selector-food__btn">pasta</button>
-                    </li>
-                    <li class="selector-food__item">
-                        <button class="selector-food__btn">desert</button>
-                    </li>
-                    <li class="selector-food__item">
-                        <button class="selector-food__btn">wine</button>
-                    </li>
-                    <li class="selector-food__item">
-                        <button class="selector-food__btn">beer</button>
-                    </li>
-                    <li class="selector-food__item">
-                        <button class="selector-food__btn">drinks</button>
-                    </li>
-                </ul>
-            </div>
+        </section>
+        <footer class="footer">
 
-            <div class="food__wrapper">
-                <ul class="food__list">
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                    <li class="food__item">
-                        <p class="food__name"> pizza quatro stagioni . . . 55, 68 usd
-                        </p>
-                        <small class="food__props">integer ullamcorper neque eu purus euismod</small>
-                    </li>
-                </ul>
-            </div>
-    </section>
-    <footer class="footer">
-
-    </footer>
+        </footer>
+    </main>
 </body>
 
 </html>

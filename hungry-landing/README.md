@@ -1,4 +1,4 @@
 # hungry people 
 restaurant landing page
 
-![alt text](/screenshots/hungry.png "hero-screen")​
+![alt text](Layouts/screenshots/hungry.png "hero-screen")​

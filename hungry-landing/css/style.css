@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'bannybold_round';
+    font-family: 'Banny';
     src: url('/fonts/banny-boldround-webfont.woff2') format('woff2'),
         url('/fonts/banny-boldround-webfont.woff') format('woff');
     font-weight: 700;
@@ -7,27 +7,6 @@
     font-display: swap;
 
 }
-
-@font-face {
-    font-family: 'bannylight_round';
-    src: url('/fonts/banny-lightround-webfont.woff2') format('woff2'),
-        url('/fonts/banny-lightround-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-
-
-}
-
-@font-face {
-    font-family: 'bannyround';
-    src: url('/fonts/banny-round-webfont.woff2') format('woff2'),
-        url('/fonts/banny-round-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 
 @font-face {
     font-family: 'Open Sans Regular';
@@ -54,6 +33,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
+    min-height: 320px;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 
@@ -74,8 +54,8 @@ ul {
 .container {
     margin: 0 auto;
     padding: 0 18px;
-    max-width: 1244px;
     position: relative;
+    max-width: 1244px;
 }
 
 .header {
@@ -95,8 +75,6 @@ p {
     top: 0;
     margin-top: 25px;
     left: calc(50% - 75px);
-    background-image: url(/img/Vector.svg);
-    background-size: 100%;
     width: 150px;
     height: 150px;
     margin-top: 25px;
@@ -126,7 +104,7 @@ p {
 
 .hero__heading {
     position: relative;
-    font-family: 'bannybold_round';
+    font-family: 'Banny';
     font-size: 96px;
     line-height: 139px;
     display: flex;
@@ -136,12 +114,18 @@ p {
     color: #FFFFFF;
 }
 
-.hero__subtitle {
+.section__subtitle {
+    display: block;
     font-family: 'Open Sans Bold';
     font-size: 12px;
     color: #FFF;
     letter-spacing: 0.5em;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.section__subtitle_margin {
+    padding: 43px 0;
 }
 
 .header__nav {
@@ -151,43 +135,34 @@ p {
 }
 
 .list__item {
-    width: 133px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 12px;
     line-height: 18px;
     color: #FFF;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .nav__list_left {
     display: flex;
-    justify-content: center;
+    flex: 0 0 40%;
+    justify-content: space-around;
 
 }
 
 .nav__list_right {
     display: flex;
-    justify-content: center;
-}
-
-.hero__content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex: 0 0 40%;
+    justify-content: space-around;
 }
 
 .heading-box {
-    position: absolute;
-    top: calc(50vh - 100px);
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: calc(50vh - 18vh);
 }
 
 .hero__btns {
@@ -198,7 +173,6 @@ p {
 }
 
 .btn-colored {
-
     margin-right: 40px;
     width: 200px;
     padding: 18px 0;
@@ -237,9 +211,14 @@ p {
 
 .hero__btn:active {}
 
-.hero__dwn-btn {
+.circle-btn {
     position: absolute;
-    bottom: 12vh;
+    top: calc(100vh - 15vh);
+    left: calc(50vw - 40px);
+}
+
+.hero__dwn-btn {
+    position: relative;
     /*мешает*/
     width: 60px;
     height: 60px;
@@ -257,6 +236,17 @@ p {
     visibility: visible !important;
 }
 
+.hero__dwn-btn::before {
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: -17px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 45px;
+
+}
+
 @keyframes bounce {
     0% {
         transform: translateY(0);
@@ -271,13 +261,15 @@ p {
     }
 }
 
-.about-us {}
+.about-us {
+    padding: 100px 0;
+}
 
 .subheading {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    font-family: 'bannybold_round';
+    font-family: 'Banny';
     font-size: 36px;
     line-height: 48px;
     /* or 133% */
@@ -302,7 +294,6 @@ p {
 .sub-subheading {
     margin-bottom: 25px;
     font-family: 'Open Sans Bold';
-    /* font-weight: bold; */
     font-size: 18px;
     line-height: 28px;
     /* or 156% */
@@ -315,7 +306,7 @@ p {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    font-family: 'bannybold_round';
+    font-family: 'Banny';
     font-size: 36px;
     line-height: 48px;
     /* or 133% */
@@ -327,7 +318,6 @@ p {
 .sub-subheading_white {
     margin-bottom: 25px;
     font-family: 'Open Sans Bold';
-    /* font-weight: bold; */
     font-size: 18px;
     line-height: 28px;
     /* or 156% */
@@ -357,16 +347,15 @@ p {
 }
 
 .content-box {
+    /* margin-bottom: 43px; */
     display: flex;
     justify-content: space-between;
-    padding: 100px 0;
 }
 
 .content-box_reverse {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    padding: 50px 0 100px 0;
 }
 
 .about-us__text-box {
@@ -399,10 +388,9 @@ p {
     position: relative;
 }
 
-.image-about-us {
+.context-img {
     width: 475px;
     height: 100%;
-    background: url(/img/about-img.png);
     filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
     border-radius: 5px;
     background-repeat: no-repeat;
@@ -410,26 +398,20 @@ p {
     background-size: cover;
 }
 
-.image-master-chef {
-    width: 475px;
-    height: 100%;
+.context-img_about-us {
+    background: url(/img/about-img.png); 
+}
+
+.context-img_our-team {
     background: url(/img/chef.jpg);
-    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-    border-radius: 5px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
-.image-book-table {
-    width: 475px;
-    height: 100%;
+.context-img_book-table {
     background: url(/img/vintage-clock.jpg);
-    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-    border-radius: 5px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+}
+
+.context-img_pancakes {
+    background: url(/img/pancakes.png);
 }
 
 .square-right::before {
@@ -462,13 +444,14 @@ p {
     z-index: 2;
 }
 
-.master-chef {
+.our-team {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/section-chef.jpg);
     background-position: center;
     background-size: cover;
+    padding-bottom: 100px;
 }
 
-.hero__subtitle-master-chef {
+.hero__subtitle-our-team {
 
     padding-top: 50px;
     display: block;
@@ -479,6 +462,10 @@ p {
     letter-spacing: 0.5em;
     text-transform: uppercase;
     text-align: center;
+}
+
+.book-table {
+    padding-top: 100px;
 }
 
 .form-wrapper {
@@ -524,26 +511,21 @@ p {
     margin-right: 10px;
 } */
 
-.image-pancakes {
-    width: 475px;
-    height: 100%;
-    background: url(/img/pancakes.png);
-    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
-    border-radius: 5px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 .specialties {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/specialites.jpg);
     background-position: center;
     background-size: cover;
+    padding-bottom: 100px;
+}
+
+.delicious-menu {
+    padding: 100px 0;
 }
 
 .delicious__text-box {
     margin: 0 auto;
-    padding: 100px 0 50px;
+    padding: 0 0 50px;
     /* display: flex;
     flex-direction: column;
     flex: 0 0 48.24%; */
@@ -593,11 +575,11 @@ p {
 
 .food__item {
     /* width: 33.333%; */
-    height: 68px;
+    height: 66px;
 }
 
 .food__name {
-    font-family: 'bannybold_round';
+    font-family: 'Banny';
     font-size: 18px;
     line-height: 18px;
     /* or 100% */
@@ -605,5 +587,136 @@ p {
     color: #333333;
 }
 
-.food__props {}
+.food__props {
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: #333;
+    opacity: 0.6;
+}
 
+.private-events {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/img/specialites.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.vertical-subtitle_left {
+    position: absolute;
+    top: 60px;
+    left: 500px;
+    font-family: 'Banny';
+    font-size: 24px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(90deg);
+}
+
+.vertical-subtitle_right {
+    position: absolute;
+    top: 320px;
+    left: -90px;
+    font-family: 'Banny';
+    font-size: 24px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    transform: rotate(90deg);
+}
+
+.image-rings {
+    margin-left: 125px;
+    width: 395px;
+    height: 475px;
+    background: url(/img/rings.jpg);
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-hands {
+    margin-left: 75px;
+    width: 395px;
+    height: 475px;
+    background: url(/img/hands.jpg);
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-contacts {
+    padding: 43px 0;
+    display: block;
+    text-align: center;
+}
+
+.book-table__props {
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: rgba(51, 51, 51, 0.5);
+    opacity: 0.5;
+}
+
+.book-table__props_bold {
+    font-family: "Open Sans Bold";
+    font-size: 12px;
+}
+
+.book-table__link-tel {
+    font-family: "Open Sans Bold";
+    font-size: 12px;
+    text-decoration: none;
+    color: rgba(51, 51, 51, 0.5);
+    opacity: 0.5;
+
+}
+
+.private-events__props {
+    font-family: "Open Sans";
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.link-tel {
+    font-family: "Open Sans Bold";
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.5;
+}
+
+.vertical-line::before {
+    content: "";
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform: rotate(-90deg);
+}
+
+
+@media(max-width: 768px) {
+
+    .book-table__input {
+        flex: 0 0 100%;
+    }
+
+    .context-img {
+        width: 375px;
+    }
+
+    .form-wrapper {
+        justify-content: normal;
+    }
+
+    .form {
+        flex: 0 1 96%;
+    }
+
+    .selector-food__btn {
+        width: 100px;
+    }
+}
