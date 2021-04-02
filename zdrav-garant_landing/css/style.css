@@ -30,7 +30,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -64,7 +65,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    /* z-index: 100; */
+    z-index: 100;
     transition: all .3s ease;
 }
 
@@ -83,7 +84,7 @@ a {
 
 .header-menu__item {
     
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
 
 }
 
@@ -149,7 +150,7 @@ a {
 
 .header__call-btn {
     margin-left: 30px;
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
     font-size: 16px;
     padding-left: 40px;
     padding-right: 40px;
@@ -167,10 +168,11 @@ a {
     transition: ease-in-out 0.3s;
 }
 
-/* СЕКЦИЯ "НАШИ УСЛУГИ" */
+/* СЕКЦИЯ "HERO" */
 
 .hero {
     margin-top: 110px;
+    padding-bottom: 100px;
 }
 
 .heading__box {
@@ -183,7 +185,7 @@ a {
 }
 
 .hero__subheading {
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
 }
 
 .heading-text_red {
@@ -194,7 +196,7 @@ a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
     color: #f30b32;
     font-size: 16px;
     text-decoration: none;
@@ -295,8 +297,167 @@ a {
 /* СЕКЦИЯ "Расчет стоимости" */
 
 .cost-calculation {
-    background: url(/img/section-calc_back.jpg);
-    background-position: center;
+    padding-top: 40px;
+    background-image: url(/img/hand-phone.png), url(/img/section-calc_back.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: right bottom , center; 
+    background-size: auto auto, cover;
+}
+
+.cost-calculation__heading {
+    margin: 0 auto 50px auto;
+    padding: 0;
+    max-width: 60vw;
+    font-family: "Roboto Bold";
+    font-size: 44px;
+    color: #fff;
+    text-align: center;
+}
+
+.form-wrapper {
+    display: flex;
+}
+
+.cost-calculation__form {
+    margin-bottom: 50px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 60%;
+    justify-content: space-between;
+    
+}
+
+.form__input {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    flex: 0 1 42%;
+    height: 40px;
+}
+
+.form__input_btn {
+    padding: 0;
+    margin-bottom: 20px;
+    flex: 0 1 48%;
+    /* height: 45px; */
+    border: none;
+    cursor: pointer;
+}
+
+.checkbox {
+    margin-top: 40px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.input-wrapper {
+    flex: 0 1 50%;
+    margin-bottom: 30px;
+}
+
+.checkbox__label {
+    margin-left: 10px;
+    color: #fff;
+}
+
+/* стилизация чекбоксов */
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked+label,
+input[type="checkbox"]:not(:checked)+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 41px;
+    line-height: 26px;
+    cursor: pointer;
+
+}
+
+input[type="checkbox"]:not(:checked)+label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 26px;
+    height: 26px;
+    background-color: #ffffff;
+    border: 1px solid #E3E3E4;
+}
+
+input[type="checkbox"]:checked+label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 26px;
+    height: 26px;
+    background-color: #4066A5;
+}
+
+input[type="checkbox"]:checked+label:before,
+input[type="checkbox"]:not(:checked)+label:before {
+    border-radius: 3px;
+}
+
+input[type="checkbox"]:checked+label:after,
+input[type="checkbox"]:not(:checked)+label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked+label:after,
+input[type="checkbox"]:not(:checked)+label:after {
+    content: "";
+    left: 7px;
+    top: 7px;
+    width: 10px;
+    height: 5px;
+    border-radius: 2px;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #efff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked+label:after {
+    opacity: 1;
+}
+
+/* секция "НАШИ УСЛУГИ" */
+
+.services {
+    padding-top: 100px;
+}
+
+.services__heading {
+    text-align: center;
+    font-family: "Roboto Bold";
+    font-size: 44px;
+}
+
+.services__list {
+
+}
+
+.services__list-item {
+    
 }
