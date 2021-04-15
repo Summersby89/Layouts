@@ -671,5 +671,33 @@ input[type="checkbox"]:checked+label:after {
 /* Секция "Перевозки больных любой сложности */
 
 .complex-transportation {
+    padding: 100px 0;
+    background: url(/img/section-complex-transportation.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+.complex-transportation__heading {
+    margin: 0 auto 50px auto;
+    max-width: 700px;
+    font-family: "Roboto Bold";
+    text-align: center;
+    font-size: 44px;
+    color: #fff;
+
+}
+
+.complex-transportation__list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.complex-transportation__list-item {
+    flex: 0 1 30%;
+}
+
+.complex-transportation__list-item:nth-child(-n+3) {
+    margin-bottom: 50px;
 }
