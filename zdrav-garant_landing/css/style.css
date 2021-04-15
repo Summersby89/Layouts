@@ -34,6 +34,13 @@ body {
     scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -83,7 +90,7 @@ a {
 }
 
 .header-menu__item {
-    
+
     /* font-family: "Roboto"; */
 
 }
@@ -172,11 +179,15 @@ a {
 
 .hero {
     margin-top: 110px;
-    padding-bottom: 100px;
+    padding: 100px 0;
+    background-image: url(/img/skoraya.webp);
+    background-repeat: no-repeat;
+    background-position: 55vw 25vh;
 }
 
 .heading__box {
     width: 50vw;
+    margin-left: 20px;
 }
 
 .hero__heading {
@@ -193,6 +204,7 @@ a {
 }
 
 .hero__btn {
+    margin-left: 20px;
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -300,7 +312,7 @@ a {
     padding-top: 40px;
     background-image: url(/img/hand-phone.png), url(/img/section-calc_back.jpg);
     background-repeat: no-repeat;
-    background-position: right bottom , center; 
+    background-position: right bottom, center;
     background-size: auto auto, cover;
 }
 
@@ -326,7 +338,7 @@ a {
     flex-wrap: wrap;
     flex: 0 1 60%;
     justify-content: space-between;
-    
+
 }
 
 .form__input {
@@ -445,19 +457,219 @@ input[type="checkbox"]:checked+label:after {
 /* секция "НАШИ УСЛУГИ" */
 
 .services {
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .services__heading {
+    margin-bottom: 100px;
     text-align: center;
     font-family: "Roboto Bold";
     font-size: 44px;
 }
 
 .services__list {
-
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .services__list-item {
-    
+    flex: 0 1 30%;
+}
+
+.services__list-item:nth-child(-n+3) {
+    margin-bottom: 50px;
+}
+
+.services__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 420px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.services__article-heading {
+    text-align: center;
+    padding-bottom: 300px;
+    max-width: 350px;
+    font-family: "Roboto Bold";
+    font-size: 22px;
+}
+
+.intercity {
+    background-image: url(/img/intercity.png);
+
+}
+
+.local-moscow {
+    background-image: url(/img/local-moscow.png);
+}
+
+.hospital-home {
+    background-image: url(/img/hospital-home.png);
+}
+
+.international {
+    background-image: url(/img/international.png);
+}
+
+.disabled-people {
+    background-image: url(/img/disabled-people.png);
+}
+
+.procedures {
+    background-image: url(/img/procedures.png);
+}
+
+
+.services__btn {
+    margin-top: 30px;
+    width: 50%;
+    align-self: center;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(255, 27, 0);
+    background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+    position: relative;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+
+
+.services__btn:hover {
+    color: #f0094a;
+    background: transparent;
+    box-shadow: none;
+}
+
+.services__btn:before,
+.services__btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #f0094a;
+    box-shadow:
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.services__btn:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.services__btn:hover:before,
+.services__btn:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
+/* Секция "Наши преимущества" */
+
+.advantages {
+    padding-bottom: 100px;
+}
+
+.advantages__list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.advantages__list-item {
+    flex: 0 1 30%;
+    border-radius: 8px;
+    box-shadow: 0 12px 32px 4px rgba(0, 0, 0, 0.2);
+}
+
+.advantages__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 420px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.advantages__heading {
+    margin-bottom: 20px;
+    padding-top: 300px;
+    text-align: center;
+    width: 80%;
+}
+
+.advantages__list-item:nth-child(-n+3) {
+    margin-bottom: 50px;
+}
+
+.moscow {
+    background-image: url(/img/advantages-moscow.png);
+}
+
+.clock {
+    background-image: url(/img/advantages-clock.png);
+}
+
+.distance {
+    background-image: url(/img/advantages-distance.png);
+}
+
+.escort {
+    background-image: url(/img/advantages-escort.png);
+}
+
+.sale {
+    background-image: url(/img/advantages-sale.png);
+}
+
+.waiting {
+    background-image: url(/img/advantages-waiting.png);
+}
+
+/* Секция "Перевозка по России" */
+
+.transportation-country {
+    padding: 100px 0;
+    background: url(/img/section-transportation-country.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.transportation-country__text {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 25px 0 25px 30px;
+    text-indent: 40px;
+}
+
+/* Секция "Перевозки больных любой сложности */
+
+.complex-transportation {
+
 }
