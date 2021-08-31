@@ -106,24 +106,34 @@ img {
 }
 
 .hero {
-  padding: 11px 0 12px;
+  padding: 11px 0;
   background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
 }
 
+.hero__heading-block {
+  padding: 119px 0;
+}
+
 .hero-img {
-  transform: translateY(3px);
+  height: 100%;
+  background-image: url("../img/hero-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translateY(4px);
 }
 
 .btn {
   border-radius: 20px;
   background: var(--color-blue);
+  font-family: "Roboto";
   font-size: 16px;
   line-height: 19px;
   color: var(--color-white);
 }
 
 .hero__btn {
-  padding: 25px 77px;
+  padding: 24px 77px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -148,8 +158,12 @@ img {
   padding: 80px 0 76px;
 }
 
-.advantages__img {
-  transform: translateY(22px);
+.advantages-img {
+  height: 100%;
+  background-image: url("../img/vectary.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .advantages-heading {
@@ -181,8 +195,8 @@ img {
 }
 
 .advantages__text {
-  margin-left: 80px;
   display: inline-block;
+  margin-left: 80px;
   font-size: 16px;
   line-height: 19px;
   font-weight: 700;
@@ -191,6 +205,7 @@ img {
 
 .advantages-article-text {
   max-width: 610px;
+  color: var(--color-prime-text);
 }
 
 /* Преподаватели */
@@ -258,8 +273,11 @@ img {
   margin-bottom: 49px;
 }
 
-.yellow-picture {
+.courses__article-text {
+  color: var(--color-prime-text);
+}
 
+.yellow-picture {
   background-image: url("../img/yellow-picture.png");
 }
 
@@ -268,7 +286,7 @@ img {
 }
 
 .green-picture {
-  background-image: url("../img/green-picture.png");
+  background: url("../img/green-picture.png") no-repeat, linear-gradient(#6DA71D, #6DA71D) left 110px/10px 70px no-repeat, #EDF0F9;
 }
 
 .blue-picture {
@@ -283,24 +301,24 @@ img {
 }
 
 .blue-picture.courses-list__article::after {
-    content: url("../img/count-clock-40.svg");
-    top: 10px;
-    right: 5px;
-    position: absolute;
+  content: url("../img/count-clock-40.svg");
+  position: absolute;
+  top: 10px;
+  right: 5px;
 }
 
 .black-picture.courses-list__article::after {
   content: url("../img/count-clock-40.svg");
+  position: absolute;
   top: 10px;
   right: 5px;
-  position: absolute;
 }
 
 .green-picture.courses-list__article::after {
   content: url("../img/count-clock-80.svg");
+  position: absolute;
   top: 10px;
   right: 5px;
-  position: absolute;
 }
 
 .courses-list__btn {
@@ -344,8 +362,8 @@ img {
 }
 
 .footer__copyrights {
-  padding-top: 3px;
   display: block;
+  padding: 3px 2px 0 0;
   width: 100%;
   text-align: center;
   font-size: 13px;
@@ -355,19 +373,47 @@ img {
 }
 
 .footer__copyrights-registry {
+  display: inline-block;
+  margin-right: 6px;
   color: var(--color-blue);
+  transform: translateX(3px);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 991px) {
   .hero__heading {
     font-size: 50px;
+  }
+
+  .hero-img {
+    background-image: url("../img/hero-img-laptop.png");
+  }
+
+  .teachers-list-item:nth-child(-n+2) {
+    margin-bottom: 22px;
+  }
+
+  .teacher-photo {
+    width: 100%;
+  }
+
+  .advantages__text {
+    margin-left: 0;
+  }
+
+  .advantages__list-item {
+    padding: 91px 7px 16px 0;
+    background-position: top left;
   }
 }
 
 @media (max-width: 768px) {
 
   .hero {
-    padding: 130px 0 134px;
+    padding: 28px 0 32px;
+  }
+
+  .hero__heading-block {
+    padding: 103px 0;
   }
 
   .hero__text {
@@ -390,9 +436,8 @@ img {
     padding-bottom: 60px;
   }
 
-  .advantages__list-item {
-    padding: 91px 7px 16px 0;
-    background-position: top left;
+  .advantages-img {
+    background-image: url("../img/vectary-laptop.png");
   }
 
   .advantages__heading-block {
@@ -407,16 +452,8 @@ img {
     padding-right: 0;
   }
 
-  .advantages__text {
-    margin-left: 0;
-  }
-
   .teachers {
     padding: 75px 0 48px;
-  }
-
-  .teachers-list-item:nth-child(-n+2) {
-    margin-bottom: 22px;
   }
 
   .teachers-item__text {
@@ -425,6 +462,22 @@ img {
 
   .article-text_margin {
     margin-bottom: 29px;
+  }
+
+  .yellow-picture {
+    background-image: url("../img/yellow-picture-laptop.png");
+  }
+
+  .black-picture {
+    background-image: url("../img/black-picture-laptop.png");
+  }
+
+  .green-picture {
+    background: url("../img/green-picture-laptop.png") no-repeat, #EDF0F9;
+  }
+
+  .blue-picture {
+    background-image: url("../img/blue-picture-laptop.jpg");
   }
 
   .courses-list__btn {
@@ -481,8 +534,17 @@ img {
 }
 
 @media (max-width: 576px) {
-  .advantages__img {
-    transform: none;
+
+  .hero {
+    padding: 44px 0 101px;
+  }
+
+  .hero__heading-block {
+    padding: 34px 0;
+  }
+
+  .advantages-img {
+    background-image: url("../img/Vectary-576px.png");
   }
 
   .advantages__list-item {
@@ -491,6 +553,22 @@ img {
 
   .teachers {
     padding: 75px 0 72px;
+  }
+
+  .yellow-picture {
+    background-image: url("../img/yellow-picture-tablet.png");
+  }
+
+  .black-picture {
+    background-image: url("../img/black-picture-tablet.png");
+  }
+
+  .green-picture {
+    background: url("../img/green-picture-tablet.png") no-repeat, #EDF0F9;
+  }
+
+  .blue-picture {
+    background-image: url("../img/blue-picture-tablet.png");
   }
 }
 
@@ -502,33 +580,34 @@ img {
   }
 
   .header__menu-list {
+    flex-direction: column;
     justify-content: space-between;
+    padding: 77px 15px;
+  }
+
+  .menu__list-item:not(:last-child) {
+    margin-bottom: 56px;
   }
 
   .header__menu {
     position: absolute;
-    top: 0;
+    top: -32px;
     left: 0;
     width: 100%;
-    height: 740px;
-    background-color: var(--color-blue);
+    height: 433px;
+    background-color: #2F2C45;
     z-index: 1;
     overflow: auto;
     transform: translateY(-104%);
     transition: transform .2s ease-in-out;
   }
 
-  .header__menu-list {
-    flex-direction: column;
-    padding: 80px 50px;
-  }
-
   .header__burger-menu {
     position: relative;
     top: -0.8px;
     display: inline-flex;
-    width: 21px;
-    height: 17px;
+    width: 22px;
+    height: 18px;
     transform: translateX(-4px);
     z-index: 2;
   }
@@ -545,16 +624,16 @@ img {
   }
 
   .header__burger-menu::before {
-    top: 0;
+    top: -2px;
   }
 
   .header__burger-menu::after {
-    bottom: 0;
+    bottom: 1px;
   }
 
   .header__burger-menu .header__burger-menu-line {
     position: absolute;
-    top: 7px;
+    top: 6px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -571,13 +650,13 @@ img {
   }
 
   .header__burger-menu_active::before {
+    top: 7px;
     transform: rotate(45deg);
-    top: 11px;
   }
 
   .header__burger-menu_active::after {
-    transform: rotate(-45deg);
     bottom: 9px;
+    transform: rotate(-45deg);
   }
 
   .hero__heading {
@@ -593,18 +672,28 @@ img {
     margin-left: 100px;
   }
 
-  .teacher-photo {
-    width: 100%;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-  }
-
   .teachers-list-item:not(:last-child) {
     margin-bottom: 23px;
   }
 
   .courses-list-item:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  .yellow-picture {
+    background-image: url("../img/yellow-picture.png");
+  }
+
+  .black-picture {
+    background-image: url("../img/black-picture.png");
+  }
+
+  .green-picture {
+    background: url("../img/green-picture.png") no-repeat, linear-gradient(#6DA71D, #6DA71D) left 110px/10px 70px no-repeat, #EDF0F9;
+  }
+
+  .blue-picture {
+    background-image: url("../img/blue-picture.png");
   }
 }
 
@@ -615,7 +704,11 @@ img {
   }
 
   .hero {
-    padding: 50px 0 50px;
+    padding: 21px 0 19px;
+  }
+
+  .hero__heading-block {
+    padding: 30px 0;
   }
 
   .hero__heading {
@@ -627,9 +720,7 @@ img {
     line-height: 21px;
   }
 
-  .hero__heading-block {
-    padding: 50px 0;
-  }
+
 
   .hero__heading {
     margin: 0 0 4px;
@@ -717,6 +808,22 @@ img {
     padding: 210px 25px 30px 30px;
     min-height: 653px;
     height: 100%;
+  }
+
+  .yellow-picture {
+    background-image: url("../img/yellow-picture-mobile.png");
+  }
+
+  .black-picture {
+    background-image: url("../img/black-picture-mobile.png");
+  }
+
+  .green-picture {
+    background: url("../img/green-picture-mobile.png") no-repeat, #EDF0F9;
+  }
+
+  .blue-picture {
+    background-image: url("../img/blue-picture-mobile.png");
   }
 
   .courses-list-item:last-child .courses__subheading {
