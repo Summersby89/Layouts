@@ -2,288 +2,606 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ЗдравГарант-комфортная перевозка лежачих больных</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <meta charset="UTF-8" />
+  <meta name="description" content="Комфортная перевозка лежачих больных" />
+  <meta name="keywords" content="перевозка, лежачий, больной, инвалид, транспортировка" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-title" content="ZdravGarant">
+  <meta name="application-name" content="ZdravGarant">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="theme-color" content="#ffffff">
+  <title>ЗдравГарант-комфортная перевозка лежачих больных</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="stylesheet" href="/css/normalize.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/css/hystmodal.min.css" />
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__body">
-                <div class="logo">
-                    <img src="/img/logo.png" class="header__logo" alt="logo" srcset="">
-                </div>
-                <nav class="header__nav">
-                    <ul class="header-menu">
-                        <li class="header-menu__item"> <a href="#" class="menu__link">О компании </a></li>
-                        <li class="header-menu__item"><a href="#" class="menu__link">Перевозки</a></li>
-                        <li class="header-menu__item"><a href="#" class="menu__link">Цены</a></li>
-                        <li class="header-menu__item"><a href="#" class="menu__link">Контакты</a></li>
-                    </ul>
-                </nav>
-
-                <ul class="header__list-contacts">
-                    <li class="list-contacts__item">
-                        <a href="tel:+74957779988" class="header__phone">+7(495)777-99-88</a>
-                    </li>
-                    <li class="list-contacts__item">
-                        <button class="header__call-btn">заказать звонок</button>
-                    </li>
-                </ul>
-            </div>
+  <header class="header fixed-elem">
+    <div class="container">
+      <div class="header__body">
+        <picture class="header__logo">
+          <img src="/img/logo.svg" alt="logo" />
+        </picture>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header-menu__item">
+              <a data-goto=".transportation-country" href="#" class="menu__link">О компании </a>
+            </li>
+            <li class="header-menu__item">
+              <a data-goto=".complex-transportation" href="#" class="menu__link">Перевозки</a>
+            </li>
+            <li class="header-menu__item">
+              <a data-goto=".prices" href="#" class="menu__link">Цены</a>
+            </li>
+            <li class="header-menu__item">
+              <a data-goto=".how-to-contact" href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__list-contacts">
+          <li class="list-contacts__item">
+            <a href="tel:+74957779988" class="header__phone">+7(495)777-99-88</a>
+          </li>
+          <li class="list-contacts__item"></li>
+        </ul>
+        <div id="b2" class="header__burger-menu">
+          <svg id="i2" class="burger-menu__icon" viewbox="0 0 100 100">
+            <path id="top-line-2" d="M30,37 L70,37 Z"></path>
+            <path id="middle-line-2" d="M30,50 L70,50 Z"></path>
+            <path id="bottom-line-2" d="M30,63 L70,63 Z"></path>
+          </svg>
         </div>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="heading__box">
-                    <h1 class="hero__heading">
-                        <span class="heading-text_red"> Комфортная перевозка </span>
-                        лежачих больных
-                        по&nbsp;Московской области и&nbsp;России
-                    </h1>
-                    <h2 class="hero__subheading">
-                        Транспортировка больных и&nbsp;людей
-                        с&nbsp;ограниченными возможностями с&nbsp;гарантией выезда,
-                        по&nbsp;фиксированной цене!
-                    </h2>
-                </div>
-                <!-- <div class=""> -->
-                <a href="#" class="hero__btn">
-                    <span class="btn__item"></span>
-                    <span class="btn__item"></span>
-                    <span class="btn__item"></span>
-                    <span class="btn__item"></span>
-                    Заказать траспортировку
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="video-bg">
+        <video class="video" width="100%" height="auto" autoplay muted loop poster="/img/hero-video_poster.webp">
+          <source src="/video/hero-video.mp4" type="video/mp4">
+          <source src="/video/hero-video-webm.webm" type="video/webm">
+        </video>
+      </div>
+      <div class="container">
+        <div class="heading__box">
+          <h1 class="hero__heading">
+            <span class="heading-text_red"> Комфортная перевозка </span>
+            лежачих больных по&nbsp;Московской области и&nbsp;России
+          </h1>
+          <h2 class="hero__subheading">
+            Транспортировка больных и&nbsp;людей с&nbsp;ограниченными
+            возможностями с&nbsp;гарантией выезда, по&nbsp;фиксированной цене!
+          </h2>
+          <button class="custom-btn hero__btn" data-hystmodal="#myModal">Заказать траспортировку</button>
+        </div>
+      </div>
+    </section>
+    <section class="cost-calculation">
+      <div class="container">
+        <h2 class="cost-calculation__heading">
+          Рассчитаем стоимость перевозки больного с ценой по sms
+        </h2>
+        <div class="form-wrapper">
+          <form action="" method="post" class="cost-calculation__form">
+            <input type="text" name="location" class="form__input" id="" placeholder="Откуда забрать?" />
+            <input type="text" name="where" class="form__input" id="" placeholder="Куда отвезти?" />
+            <input type="date" name="date" class="form__input" id="" placeholder="Куда отвезти?"/>
+            <input type="tel" name="phone" class="form__input" id="" placeholder="Ваш телефон" />
+            <input type="text" name="name" class="form__input" id="" placeholder="Ваше имя" />
+            <input type="button" class="form__input_btn" value="получить sms с ценой" />
+            <div class="checkbox">
+              <div class="input-wrapper">
+                <input type="checkbox" name="" id="cash" />
+                <label for="cash" class="checkbox__label">Оплата наличными</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="checkbox" name="" id="card" />
+                <label for="card" class="checkbox__label">Оплата картой
+                </label>
+              </div>
+              <div class="input-wrapper">
+                <input type="checkbox" name="" id="invalid" />
+                <label for="invalid" class="checkbox__label">Инвалид-колясочник</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="checkbox" name="" id="recumbent" />
+                <label for="recumbent" class="checkbox__label">Лежачий больной</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="checkbox" name="" id="round-trip" />
+                <label for="round-trip" class="checkbox__label">Поездка туда-обратно</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <h2 class="services__heading">Наши услуги</h2>
+        <ul class="services__list">
+          <li class="services__list-item">
+            <article class="services__article intercity">
+              <h3 class="services__article-heading">
+                Междугородняя перевозка лежачих больных
+              </h3>
+              <button class="services__btn">Оставить заявку</button>
+            </article>
+          </li>
+          <li class="services__list-item">
+            <article class="services__article local-moscow">
+              <h3 class="services__article-heading">
+                Перевозка лежачих больных по&nbsp;Московской области
+              </h3>
+              <button class="services__btn">Оставить заявку</button>
+            </article>
+          </li>
+          <li class="services__list-item">
+            <article class="services__article procedures">
+              <h3 class="services__article-heading">
+                Перевозка больного на&nbsp;процедуры
+              </h3>
+              <button class="services__btn">Оставить заявку</button>
+            </article>
+          </li>
+          <li class="services__list-item">
+            <article class="services__article international">
+              <h3 class="services__article-heading">
+                Встреча в&nbsp;аэропорту и&nbsp;на&nbsp;вокзале
+              </h3>
+              <button class="services__btn">Оставить заявку</button>
+            </article>
+          </li>
+          <li class="services__list-item">
+            <article class="services__article hospital-home">
+              <h3 class="services__article-heading">
+                Перевозка из&nbsp;больницы домой
+              </h3>
+              <button class="services__btn">Оставить заявку</button>
+            </article>
+          </li>
+          <li class="services__list-item">
+            <article class="services__article disabled-people">
+              <h3 class="services__article-heading">Перевозка инвалидов</h3>
+              <button class="services__btn">Оставить заявку</button>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="prices">
+      <div class="container">
+        <h2 class="services__heading">Примеры цен на перевозку больных</h2>
+        <table class="prices__table">
+          <thead class="table__head">
+            <tr>
+              <th scope="col" class="table__cell">Пункт отправления</th>
+              <th scope="col" class="table__cell">Пункт прибытия</th>
+              <th scope="col" class="table__cell">Информация о больном</th>
+              <th scope="col" class="table__cell">Стоимость перевозки</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table__column">
+              <td data-label="Пункт отправления" class="table__string">г. Красногорск</td>
+              <td data-label="Пункт прибытия" class="table__string">г. Москва</td>
+              <td data-label="Информация о больном" class="table__string">Мужчина, 32 года, в тяжелом состоянии</td>
+              <td data-label="Стоимость перевозки" class="table__string">3360 руб</td>
+            </tr>
+            <tr class="table__column">
+              <td data-label="Пункт отправления" class="table__string">г. Домодедово</td>
+              <td data-label="Пункт прибытия" class="table__string">г. Красногорск</td>
+              <td data-label="Информация о больном" class="table__string">Мужчина, 65 лет, парализация после инсульта
+              </td>
+              <td data-label="Стоимость перевозки" class="table__string">5340 руб</td>
+            </tr>
+            <tr class="table__column">
+              <td data-label="Пункт отправления" class="table__string">г. Москва</td>
+              <td data-label="Пункт прибытия" class="table__string">г. Тула</td>
+              <td data-label="Информация о больном" class="table__string">Женщина, 73 года, инвалид</td>
+              <td data-label="Стоимость перевозки" class="table__string">4750 руб</td>
+            </tr>
+            <tr class="table__column">
+              <td data-label="Пункт отправления" class="table__string">г. Химки</td>
+              <td data-label="Пункт прибытия" class="table__string">г. Москва</td>
+              <td data-label="Информация о больном" class="table__string">Мужчина, 58 лет, после инсульта</td>
+              <td data-label="Стоимость перевозки" class="table__string">5600 руб</td>
+            </tr>
+            <tr class="table__column">
+              <td data-label="Пункт отправления" class="table__string">г. Красногорск</td>
+              <td data-label="Пункт прибытия" class="table__string">г. Москва</td>
+              <td data-label="Информация о больном" class="table__string">Женщина, 63 года, парализация после инсульта
+              </td>
+              <td data-label="Стоимость перевозки" class="table__string">3200 руб</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h2 class="services__heading">Преимущества "ЗдравГарант"</h2>
+        <ul class="advantages__list">
+          <li class="advantages__list-item">
+            <article class="advantages__card moscow">
+              <h3 class="advantages__heading">
+                Перевозка по&nbsp;МО от&nbsp;3000&nbsp; &#8381;
+              </h3>
+            </article>
+          </li>
+          <li class="advantages__list-item">
+            <article class="advantages__card clock">
+              <h3 class="advantages__heading">
+                Подача машины в&nbsp;течение 30&nbsp;мин
+              </h3>
+            </article>
+          </li>
+          <li class="advantages__list-item">
+            <article class="advantages__card distance">
+              <h3 class="advantages__heading">
+                При поездке свыше 300&nbsp;км скидка&nbsp;&mdash; 10%
+              </h3>
+            </article>
+          </li>
+          <li class="advantages__list-item">
+            <article class="advantages__card escort">
+              <h3 class="advantages__heading">
+                Бесплатное сопровождение по&nbsp;медучреждению
+              </h3>
+            </article>
+          </li>
+          <li class="advantages__list-item">
+            <article class="advantages__card sale">
+              <h3 class="advantages__heading">
+                Ветеранам ВОВ и&nbsp;инвалидам скидка&nbsp;10%
+              </h3>
+            </article>
+          </li>
+          <li class="advantages__list-item">
+            <article class="advantages__card waiting">
+              <h3 class="advantages__heading">
+                При поездке туда-обратно час ожидания бесплатно
+              </h3>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="transportation-country">
+      <div class="container">
+        <h2 class="services__heading">Перевозка лежачих больных по России</h2>
+        <p class="transportation-country__text">
+          "ЗдравГарант"- это официальная компания оформляющая все необходимые
+          документы на&nbsp;медицинские и&nbsp;транспортные услуги,
+          мы&nbsp;работаем для Вас без выходных дней и&nbsp;праздников.
+        </p>
+        <p class="transportation-country__text">
+          Наши квалифицированные сотрудники приедут к&nbsp;Вам в&nbsp;любое
+          назначенное время дня или ночи в&nbsp;нужное место, и&nbsp;доставят
+          лежачего больного в&nbsp;любое медицинское учреждение, вокзал,
+          аэропорт, на&nbsp;дачу или в&nbsp;любой другой город.
+        </p>
+        <p class="transportation-country__text">
+          Основная цель компании "ЗдравГарант" это: Перевозка лежачих больных,
+          инвалидов, граждан лишённых способности самостоятельно
+          передвигаться&nbsp;&mdash; основная деятельность нашей компании.
+        </p>
+        <p class="transportation-country__text">
+          Целью нашей деятельности является оказание квалифицированной помощи
+          при транспортировке маломобильной части населения, высокий уровень
+          сервиса и&nbsp;индивидуальный подход к&nbsp;каждому клиенту.
+        </p>
+        <p class="transportation-country__text">
+          Бригада наших сотрудников осуществит безопасную и&nbsp;комфортную
+          перевозку маломобильных лежачих больных по&nbsp;принципу
+          &laquo;от&nbsp;кровати до&nbsp;кровати&raquo;, гарантируя безопасную
+          перевозку и&nbsp;транспортировку без дополнительных доплат
+          и&nbsp;сборов, по&nbsp;фиксированному тарифу.
+        </p>
+        <p class="transportation-country__text">
+          Специально подготовленный персонал бережно и&nbsp;безопасно доставит
+          лежачих больных и&nbsp;пожилых людей на&nbsp;комфортабельных
+          автомобилях марок &laquo;Ford, Volkswagen, Mersedes, Fiat&raquo;
+          оснащенными специальным оборудованием: медицинской каталкой,
+          инвалидным креслом, мягкими и&nbsp;жесткими носилками. В&nbsp;машине
+          также имеются пледы и&nbsp;подушки.
+        </p>
+      </div>
+    </section>
+    <section class="complex-transportation">
+      <div class="container">
+        <h2 class="complex-transportation__heading">
+          Транспортировка больных любой сложности
+        </h2>
+        <ul class="complex-transportation__list">
+          <li class="complex-transportation__list-item">
+            <div class="complex-transportation__content-box">
+              <h3 class="complex-transportation__subheading">
+                Быстрая обработка поступившей заявки
+              </h3>
+              <span class="complex-transportation__text">Все поcтупившие заявки обрабатываются в&nbsp;течении
+                15&nbsp;минут
+              </span>
+            </div>
+            <span class="section-icon">
+              <i class="fa fa-laptop icon-border" aria-hidden="true"></i>
+            </span>
+          </li>
+          <li class="complex-transportation__list-item">
+            <div class="complex-transportation__content-box">
+              <h3 class="complex-transportation__subheading">
+                Быстрый выезд спецавтомобиля
+              </h3>
+              <span class="complex-transportation__text">Выезд спецавтомобиля с&nbsp;бригадой осуществляется сразу
+                после согласования деталей</span>
+            </div>
+            <span class="section-icon">
+              <i class="fa fa-ambulance icon-border" aria-hidden="true"></i>
+            </span>
+          </li>
+          <li class="complex-transportation__list-item">
+            <div class="complex-transportation__content-box">
+              <h3 class="complex-transportation__subheading">
+                Добрый, заботливый и вежливый персонал
+              </h3>
+              <span class="complex-transportation__text">В&nbsp;наших бригадах работают настоящие профессионалы своего
+                дела</span>
+            </div>
+            <span class="section-icon">
+              <i class="fa fa-user-md" aria-hidden="true"></i>
+            </span>
+          </li>
+          <li class="complex-transportation__list-item">
+            <div class="complex-transportation__content-box">
+              <h3 class="complex-transportation__subheading">
+                Разумные цены на транспортировку больного
+              </h3>
+              <span class="complex-transportation__text">Стоимость перевозки лежачего больного по&nbsp;Москве всего
+                от&nbsp;2000 рублей!</span>
+            </div>
+            <span class="section-icon">
+              <i class="icon-border fa fa-money" aria-hidden="true"></i>
+            </span>
+          </li>
+          <li class="complex-transportation__list-item">
+            <div class="complex-transportation__content-box">
+              <h3 class="complex-transportation__subheading">
+                Перевоз больного от кровати до кровати
+              </h3>
+              <span class="complex-transportation__text">Безопасная перевозка больных от&nbsp;кровати до&nbsp;кровати
+                + подъём/спуск по&nbsp;этажам</span>
+            </div>
+            <span class="section-icon">
+              <i class="fa fa-wheelchair icon-border" aria-hidden="true"></i>
+            </span>
+          </li>
+          <li class="complex-transportation__list-item">
+            <div class="complex-transportation__content-box">
+              <h3 class="complex-transportation__subheading">
+                Выгодные междугородные перевозки
+              </h3>
+              <span class="complex-transportation__text">Наша компания предоставляет доступные цены
+                на&nbsp;междугородные перевозки</span>
+            </div>
+            <span class="section-icon">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="guarantees">
+      <div class="container">
+        <h2 class="complex-transportation__heading">Наши гарантии</h2>
+        <ul class="guarantees__list">
+          <li class="guarantees__list-item">
+            <span class="complex-transportation__text">Мы&nbsp;предоставляем услуги по&nbsp;перевозке лежачих больных
+              на основании договора, заключённого между нашей компанией и
+              клиентом
+            </span>
+            <span class="section-icon">
+              <i class="fa fa-handshake-o icon-border" aria-hidden="true"></i>
+            </span>
+          </li>
+          <li class="guarantees__list-item">
+            <span class="complex-transportation__text">При перевозке мы&nbsp;используем мягкие носилки
+              и&nbsp;вакуумные матрасы для лежачих больных, кресла-носилки,
+              инвалидные кресла и&nbsp;кресла с&nbsp;надёжными фиксаторами
+              в&nbsp;пути для сидячих пассажиров</span>
+            <span class="section-icon">
+              <i class="fa fa-wheelchair" aria-hidden="true"></i>
+            </span>
+          </li>
+          <li class="guarantees__list-item">
+            <span class="complex-transportation__text">Если вы&nbsp;закажете транспортировку к&nbsp;определённому
+              времени (например, на&nbsp;приём в&nbsp;больницу,
+              в&nbsp;аэропорт или к&nbsp;поезду), мы подадим машину заранее
+            </span>
+            <span class="section-icon">
+              <i class="fa fa-ambulance" aria-hidden="true"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="answers">
+      <div class="container">
+        <h2 class="complex-transportation__heading black">
+          Ответы на часто
+          <span class="heading-text_red"> задаваемые вопросы </span>
+        </h2>
+        <details class="answers__accordion">
+          <summary>Как вы&nbsp;перевозите лежачих больных?</summary>
+          <p class="accordion__text">
+            Наши автомобили полностью оборудованы всем необходимым для
+            транспортировки пассажиров в&nbsp;положении лежа. Пациент едет
+            в&nbsp;машине на&nbsp;носилках-каталке, как в&nbsp;скорой помощи.
+            Мы&nbsp;используем кресло-каталку и&nbsp;мягкие носилки для спуска
+            или подъема пациента внутри зданий. С&nbsp;помощью вакуумного
+            матраса мы&nbsp;фиксируем переломы и&nbsp;обеспечиваем максимально
+            бережную транспортировку больного
+          </p>
+        </details>
+        <details class="answers__accordion">
+          <summary>
+            Есть&nbsp;ли в&nbsp;машине кондиционер и&nbsp;печка?
+          </summary>
+          <p class="accordion__text">
+            Да, в&nbsp;наших автомобилях установлена система климат-контроля.
+            Летом работает кондиционер. В&nbsp;зимнее время&nbsp;&mdash; две
+            печки, которые быстро нагревают салон до&nbsp;комфортной
+            температуры
+          </p>
+        </details>
+        <details class="answers__accordion">
+          <summary>Сколько человек может поехать вместе с пациентом?</summary>
+          <p class="accordion__text">
+            В&nbsp;наших машинах есть 3&nbsp;места для сопровождающих, помимо
+            места для самого пациента. Это комфортные мягкие кресла
+            с&nbsp;откидывающейся спинкой
+          </p>
+        </details>
+      </div>
+    </section>
+    <section class="offices">
+      <div class="container">
+        <h2 class="services__heading">Наши офисы</h2>
+        <div class="map-wrapper">
+          <div class="adresses">
+            <ul class="offices__list">
+              <li class="offices__list-item">
+                <span class="offices__text">Бульвар Яна Райниса</span>
+              </li>
+              <li class="offices__list-item">
+                <span class="offices__text">Проспект мира</span>
+              </li>
+              <li class="offices__list-item">
+                <span class="offices__text">Варшавское шоссе</span>
+              </li>
+            </ul>
+          </div>
+          <div class="offices__map">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A4237731a2da28f7cc108b56a0a9659e1c0996eda94205acd1970f03cad9552f9&amp;source=constructor"
+              width="100%" height="400" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="how-to-contact">
+      <div class="container">
+        <h2 class="services__heading">Как с нами связаться</h2>
+        <div class="how-to-contact__wrapper">
+          <div class="how-to-contact__links">
+            <ul class="how-to-contact__list">
+              <li class="how-to-contact__list-item">
+                <a href="tel:+7499998877" class="how-to-contact__list-item-link">
+                  <span class="how-to-contact__icon">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                  </span>
+                  +7(499)999-77-88
                 </a>
-                <!-- </div> -->
-            </div>
-        </section>
-        <section class="cost-calculation">
-            <div class="container">
-                <h2 class="cost-calculation__heading">
-                    Рассчитаем стоимость перевозки больного с ценой по sms
-                </h2>
-                <div class="form-wrapper">
-                    <form action="" method="post" class="cost-calculation__form">
-                        <input type="text" name="location" class="form__input" id="" placeholder="Откуда забрать?">
-                        <input type="text" name="where" class="form__input" id="" placeholder="Куда отвезти?">
-                        <input type="date" name="date" class="form__input" id="">
-                        <input type="tel" name="phone" class="form__input" id="" placeholder="Ваш телефон">
-                        <input type="text" name="name" class="form__input" id="" placeholder="Ваше имя">
-                        <input type="button" class="form__input_btn" value="получить sms с ценой">
-                        <div class="checkbox">
-                            <div class="input-wrapper">
-                                <input type="checkbox" name="" id="cash">
-                                <label for="cash" class="checkbox__label">Оплата наличными</label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="checkbox" name="" id="card">
-                                <label for="card" class="checkbox__label">Оплата картой </label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="checkbox" name="" id="invalid">
-                                <label for="invalid" class="checkbox__label">Инвалид-колясочник</label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="checkbox" name="" id="recumbent">
-                                <label for="recumbent" class="checkbox__label">Лежачий больной</label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="checkbox" name="" id="round-trip">
-                                <label for="round-trip" class="checkbox__label">Поездка туда-обратно</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </section>
-        <section class="services">
-            <div class="container">
-                <h2 class="services__heading">Наши услуги</h2>
-                <ul class="services__list">
-                    <li class="services__list-item ">
-                        <article class="services__article intercity">
-                            <h3 class="services__article-heading ">Междугородняя перевозка лежачих больных</h3>
-                            <button class="services__btn">Оставить заявку</button>
-                        </article>
-                    </li>
-                    <li class="services__list-item">
-                        <article class="services__article local-moscow">
-                            <h3 class="services__article-heading ">Перевозка лежачих больных по&nbsp;Московской области
-                            </h3>
-                            <button class="services__btn">Оставить заявку</button>
-                        </article>
-                    </li>
-                    <li class="services__list-item">
-                        <article class="services__article procedures">
-                            <h3 class="services__article-heading">Перевозка больного
-                                на&nbsp;процедуры</h3>
-                            <button class="services__btn">Оставить заявку</button>
-                        </article>
-                    </li>
-                    <li class="services__list-item">
-                        <article class="services__article international">
-                            <h3 class="services__article-heading">Встреча в&nbsp;аэропорту и&nbsp;на&nbsp;вокзале</h3>
-                            <button class="services__btn">Оставить заявку</button>
-                        </article>
-                    </li>
-                    <li class="services__list-item">
-                        <article class="services__article hospital-home">
-                            <h3 class="services__article-heading">Перевозка из&nbsp;больницы домой</h3>
-                            <button class="services__btn">Оставить заявку</button>
-                        </article>
-                    </li>
-                    <li class="services__list-item">
-                        <article class="services__article disabled-people">
-                            <h3 class="services__article-heading">Перевозка инвалидов</h3>
-                            <button class="services__btn">Оставить заявку</button>
-                        </article>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="prices">
-            <div class="container">
-                <h2 class="services__heading">
-                    Примеры цен на перевозку больных
-                </h2>
-            </div>
-        </section>
-        <section class="advantages">
-            <div class="container">
-                <h2 class="services__heading">
-                    Преимущества "ЗдравГарант"
-                </h2>
-                <ul class="advantages__list">
-                    <li class="advantages__list-item">
-                        <article class="advantages__card moscow">
-                            <h3 class="advantages__heading">Перевозка по&nbsp;МО от&nbsp;3000&nbsp; &#8381;</h3>
-                        </article>
-                    </li>
-                    <li class="advantages__list-item">
-                        <article class="advantages__card clock">
-                            <h3 class="advantages__heading">Подача машины в&nbsp;течение 30&nbsp;мин
-                            </h3>
-                    </li>
-                    <li class="advantages__list-item">
-                        <article class="advantages__card distance">
-                            <h3 class="advantages__heading">При поездке свыше 300&nbsp;км скидка&nbsp;&mdash; 10%
-                            </h3>
-                        </article>
-                    </li>
-                    <li class="advantages__list-item ">
-                        <article class="advantages__card escort">
-                            <h3 class="advantages__heading">Бесплатное сопровождение по&nbsp;медучреждению
-                            </h3>
-                        </article>
-                    </li>
-                    <li class="advantages__list-item">
-                        <article class="advantages__card sale">
-                            <h3 class="advantages__heading">Ветеранам ВОВ и&nbsp;инвалидам скидка&nbsp;10%
-                            </h3>
-                        </article>
-                    </li>
-                    <li class="advantages__list-item">
-                        <article class="advantages__card waiting">
-                            <h3 class="advantages__heading">При поездке туда-обратно час ожидания бесплатно
-                            </h3>
-                        </article>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="transportation-country">
-            <div class="container">
-                <h2 class="services__heading">
-                    Перевозка лежачих больных по России
-                </h2>
-                <p class="transportation-country__text">
-                    "ЗдравГарант"- это официальная компания оформляющая все необходимые документы на&nbsp;медицинские
-                    и&nbsp;транспортные услуги,
-                    мы&nbsp;работаем для Вас без выходных дней и&nbsp;праздников.
-                </p>
-                <p class="transportation-country__text">
-                    Наши квалифицированные сотрудники приедут к&nbsp;Вам в&nbsp;любое назначенное время дня или ночи
-                    в&nbsp;нужное место,
-                    и&nbsp;доставят лежачего больного в&nbsp;любое медицинское учреждение, вокзал, аэропорт,
-                    на&nbsp;дачу или в&nbsp;любой другой город.
-                </p>
-                <p class="transportation-country__text">
-                    Основная цель компании "ЗдравГарант" это:
-                    Перевозка лежачих больных, инвалидов, граждан лишённых способности самостоятельно
-                    передвигаться&nbsp;&mdash; основная деятельность нашей компании.
-                </p>
-                <p class="transportation-country__text">
-                    Целью нашей деятельности является оказание квалифицированной помощи при транспортировке
-                    маломобильной части населения,
-                    высокий уровень сервиса и&nbsp;индивидуальный подход к&nbsp;каждому клиенту.
-                </p>
-                <p class="transportation-country__text">
-                    Бригада наших сотрудников осуществит безопасную и&nbsp;комфортную перевозку маломобильных лежачих
-                    больных по&nbsp;принципу &laquo;от&nbsp;кровати до&nbsp;кровати&raquo;, гарантируя безопасную
-                    перевозку и&nbsp;транспортировку без дополнительных доплат и&nbsp;сборов, по&nbsp;фиксированному
-                    тарифу.
-                </p>
-                <p class="transportation-country__text">
-                    Специально подготовленный персонал бережно и&nbsp;безопасно доставит лежачих больных и&nbsp;пожилых
-                    людей на&nbsp;комфортабельных автомобилях марки &laquo;Ford, Volkswagen, Mersedes, Fiat&raquo;
-                    оснащенными специальным оборудованием: медицинской каталкой, инвалидным креслом, мягкими
-                    и&nbsp;жесткими носилками. В&nbsp;машине также имеются пледы и&nbsp;подушки.
-                </p>
-            </div>
-        </section>
-        <section class="complex-transportation">
-            <div class="container">
-                <h2 class="complex-transportation__heading">
-                    Транспортировка больных
-                    любой сложности
-                </h2>
-                <ul class="complex-transportation__list">
-                    <li class="complex-transportation__list-item">
-                        <h3 class="complex-transportation__subheading">Быстрая обработка поступившей заявки</h3>
-                        <span class="complex-transportation__text">Все поcтупившие заявки обрабатываются в течении 15
-                            минут</span>
-                    </li>
-                    <li class="complex-transportation__list-item">
-                        <h3 class="complex-transportation__subheading">Быстрый выезд спец автомобиля</h3>
-                        <span class="complex-transportation__text">Выезд спец автомобиля с бригадой осуществляется сразу
-                            после согласования деталей</span>
-                    </li>
-                    <li class="complex-transportation__list-item">
-                        <h3 class="complex-transportation__subheading">Добрый, заботливый и вежливый персонал</h3>
-                        <span class="complex-transportation__text">В наших бригадах работают настоящие профессионалы
-                            своего дела</span>
-                    </li>
-                    <li class="complex-transportation__list-item">
-                        <h3 class="complex-transportation__subheading">Разумные цены на транспортировку больного</h3>
-                        <span class="complex-transportation__text">Стоимость перевозки лежачего больного по Москве всего
-                            от 2000 рублей!</span>
-                    </li>
-                    <li class="complex-transportation__list-item">
-                        <h3 class="complex-transportation__subheading">Перевоз больного от кровати до кровати</h3>
-                        <span class="complex-transportation__text">Безопасная перевозка больных от кровати до кровати +
-                            подъём/спуск по этажам</span>
-                    </li>
-                    <li class="complex-transportation__list-item">
-                        <h3 class="complex-transportation__subheading">Выгодные междугородные перевозки</h3>
-                        <span class="complex-transportation__text">Наша компания предоставляет доступные цены на
-                            междугородные перевозки</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-
-    </footer>
-
+              </li>
+              <li class="how-to-contact__list-item">
+                <a href="mailto:" class="how-to-contact__list-item-link">
+                  <span class="how-to-contact__icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                  </span>
+                  zravgarant@mail.ru</a>
+              </li>
+              <li class="how-to-contact__list-item">
+                <a href="#" class="how-to-contact__list-item-link">
+                  <span class="how-to-contact__icon">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                  </span>
+                  telegram</a>
+              </li>
+            </ul>
+          </div>
+          <form action="" method="post" class="how-to-contact__form">
+            <p class="how-to-contact__text">
+              Оставьте заявку и мы свяжемся с Вами в ближайшее время!
+            </p>
+            <input type="text" name="" class="how-to-contact__form-input" id="" placeholder="Ваше имя" />
+            <input type="tel" name="" class="how-to-contact__form-input" id="" placeholder="Ваш телефон" />
+            <input type="email" name="" class="how-to-contact__form-input" id="" placeholder="Ваш email" />
+            <button type="submit" class="how-to-contact__form-btn">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__body">
+      <small class="footer__text"> &#169; ЗдравГарант, 2021 </small>
+      <ul class="footer__socials-list">
+        <li class="footer__socials-list-item">
+          <a href="http://" class="footer__socials-list-link" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-vk" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="footer__socials-list-item">
+          <a href="http://" class="footer__socials-list-link" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="footer__socials-list-item">
+          <a href="http://" class="footer__socials-list-link" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div type="button" class="callback-btn" data-hystmodal="#myModal">
+      <div class="text-call">
+        <i class="fa fa-phone"></i>
+        <span>Заказать<br />звонок</span>
+      </div>
+    </div>
+  </footer>
+  <div class="hystmodal" id="myModal" aria-hidden="true">
+    <div class="hystmodal__wrap">
+      <div class="hystmodal__window" role="dialog" aria-modal="true">
+        <button data-hystclose class="hystmodal__close">Закрыть</button>
+        <div class="popup__form-wrapper">
+          <form class="form" action="https://form.taxi/s/mn42lwd8" method="post">
+            <h3 class="popup__heading">Заказать обратный звонок</h3>
+            <label class="popup__label" for="popup__input">
+              Ваше имя
+              <input class="popup__input" type="text" name="Name" id="">
+            </label>
+            <label class="popup__label" for="popup__input">
+              Ваш телефон
+              <input class="popup__input" type="tel" name="Your tel" id="" placeholder="+7 (___) ___-__-__">
+            </label>
+            <p class="popup__text">
+              Нажимая кнопку “Заказать”, вы даете свое согласие на обработку персональных данных, в
+              соответвии с
+              <a class="popup__link" href="#" target="_blank" rel="noopener noreferrer">Политикой конфиденциальности</a>
+            </p>
+            <button class="popup__btn" type="submit">Заказать</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/animateAnything.js"></script>
+  <script src="/js/burger.js"></script>
+  <script src="/js/toggleMenu.js"></script>
+  <script src="/js/scrollBehavior.js"></script>
+  <script src="/js/hystmodal.min.js"></script>
+  <script src="/js/scrollHeader.js"></script>
+  <script src="/js/modal.js"></script>
 </body>
 
 </html>
